@@ -10,13 +10,13 @@ const gsapAbout = (questionsRef, rightElementsRef) => {
         gsap.fromTo(
           questionsRef.current[index],
           { x: -200, opacity: 0 },
-          { x: 0, opacity: 1, duration: 1}
+          { x: 0, opacity: 1, duration: 1.5}
         );
 
         gsap.fromTo(
           rightElementsRef.current[index],
           { x: 200, opacity: 0 },
-          { x: 0, opacity: 1, duration: 1, delay: 0.5 }
+          { x: 0, opacity: 1, duration: 1.5, delay: 0.5 }
         );
 
         observer.unobserve(entry.target);

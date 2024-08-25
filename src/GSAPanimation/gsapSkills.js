@@ -11,7 +11,7 @@ const gsapSkills = (slideRefs, scaleRefs) => {
                 gsap.fromTo(
                     slideRefs.current[index], 
                     { x: 200, opacity: 0 }, 
-                    { x: 0, opacity: 1, duration: 1, scrollTrigger: {
+                    { x: 0, opacity: 1, duration: 1.5, scrollTrigger: {
                         trigger: slideRefs.current[index],
                         start: 'top bottom',
                         end:  'bottom top',
@@ -22,7 +22,7 @@ const gsapSkills = (slideRefs, scaleRefs) => {
                 gsap.fromTo(
                     scaleRefs.current[index],
                     { scale: 0, opacity: 0 }, 
-                    { scale: 1, opacity: 1, duration: 1 }
+                    { scale: 1, opacity: 1, duration: 1.5 }
                 );
 
                 observer.unobserve(entry.target);

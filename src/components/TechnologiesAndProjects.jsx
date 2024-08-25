@@ -1,20 +1,56 @@
 import React, { useEffect, useRef } from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { FaReact, FaSchool } from 'react-icons/fa';
+import { FaShoppingCart , FaSchool, FaPen, FaPuzzlePiece, FaSun, FaHatCowboy, FaUtensils, FaApple } from 'react-icons/fa';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import gsapSkills from '../GSAPanimation/gsapSkills';
+import projectsData from '../data/projectsData';
+
+
 
 gsap.registerPlugin(ScrollTrigger);
 
+
+
 const TechnologiesAndProjects = () => {
+    const icons = [<FaSchool/>, <FaShoppingCart />, <FaPen />, <FaPuzzlePiece />, < FaUtensils/>, < FaHatCowboy/>, <FaApple />, <FaSun />];
+
     const slideRefs = useRef([]);
     const scaleRefs = useRef([]);
 
     useEffect(() => {
         gsapSkills(slideRefs, scaleRefs);
     }, []);
+
+    const projects = projectsData?.map((project, index) => {
+        return (
+            <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                contentStyle={{ background: 'white', color: 'black' }}
+                contentArrowStyle={{ borderRight: '7px solid  #2e2e4d' }}
+                iconStyle={{ background: '#3370FF', color: '#fff', fontWeight: 'bold' }}
+                icon={icons[project.iconIndex]}
+            >
+                <div className="text-3xl text-neon-green mb-[2px]">{project.name}</div>
+                <div className="text-md mb-4 italic">
+                    {
+                        project.technologies.map((technology, index) => {
+                            if(index == project.technologies.length - 1){
+                                return <span className='text-neon-blue drop-shadow-sm'>{technology}</span>
+                            } else {
+                                return <span className='text-neon-blue drop-shadow-sm'>{technology}, </span>
+                            }
+                        })
+                    }
+                </div>
+                <ul className='text-md'>
+                    <li className='mb-[2px]'>{project.description}</li>
+                    <img src={project.image} alt="website image" />
+                </ul>
+            </VerticalTimelineElement>
+        )
+    })
 
 
     
@@ -37,19 +73,19 @@ const TechnologiesAndProjects = () => {
 
                 <div className='flex justify-start gap-8 mb-32'>
                     <div ref={(el) => (scaleRefs.current[0] = el)} data-index="0" className='opacity-0 w-[100px] flex flex-col justify-center'>
-                        <div className='mx-auto mb-2 rounded-full w-[80px] h-[80px] border-4 border-solid border-neon-blue bg-white flex flex-col justify-center cursor-pointer hover:scale-105 hover:shadow-xl transition-all duration-500'>
+                        <div className='mx-auto mb-2 rounded-full w-[80px] h-[80px] border-4 border-solid border-neon-blue bg-white flex flex-col justify-center cursor-pointer hover:scale-105 hover:shadow-xl transition-all duration-[300ms]'>
                             <img src='../public/images/JS.png' alt="JS icon" className='rounded-full h-[60px] mx-auto' />
                         </div>
                         <div className='text-center text-xl'>JavaScript</div>
                     </div>
                     <div ref={(el) => (scaleRefs.current[1] = el)} data-index="1" className='opacity-0 w-[100px] flex flex-col justify-center'>
-                        <div className='mx-auto mb-2 rounded-full w-[80px] h-[80px] border-4 border-solid border-neon-blue bg-white flex flex-col justify-center cursor-pointer hover:scale-105 hover:shadow-xl transition-all duration-500'>
+                        <div className='mx-auto mb-2 rounded-full w-[80px] h-[80px] border-4 border-solid border-neon-blue bg-white flex flex-col justify-center cursor-pointer hover:scale-105 hover:shadow-xl transition-all duration-[300ms]'>
                             <img src='../public/images/JAVA.png' alt="JAVA icon" className='rounded-full h-[60px] w-[100px] mx-auto' />
                         </div>
                         <div className='text-center text-xl'>Java</div>
                     </div>
                     <div ref={(el) => (scaleRefs.current[2] = el)} data-index="2" className='opacity-0 w-[100px] flex flex-col justify-center'>
-                        <div className='mx-auto mb-2 rounded-full w-[80px] h-[80px] border-4 border-solid border-neon-blue bg-white flex flex-col justify-center cursor-pointer hover:scale-105 hover:shadow-xl transition-all duration-500'>
+                        <div className='mx-auto mb-2 rounded-full w-[80px] h-[80px] border-4 border-solid border-neon-blue bg-white flex flex-col justify-center cursor-pointer hover:scale-105 hover:shadow-xl transition-all duration-[300ms]'>
                             <img src='../public/images/C.png' alt="C icon" className='rounded-full h-[60px] mx-auto' />
                         </div>
                         <div className='text-center text-xl'>C</div>
@@ -57,20 +93,7 @@ const TechnologiesAndProjects = () => {
                 </div>
 
                 <VerticalTimeline>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--work"
-                        contentStyle={{ background: 'white', color: 'black' }}
-                        contentArrowStyle={{ borderRight: '7px solid  #2e2e4d' }}
-                        iconStyle={{ background: '#3370FF', color: '#fff' }}
-                        icon={<FaSchool />}
-                    >
-                        <div className="text-3xl text-neon-green mb-[2px]">Korepetycje Online</div>
-                        <div className="text-md mb-4 italic"><span className='text-neon-blue drop-shadow-sm'>React</span>, <span className='text-neon-blue drop-shadow-sm'>Node</span>, <span className='text-neon-blue drop-shadow-sm'>MongoDb</span>, <span className='text-neon-blue drop-shadow-sm'>Tailwind</span></div>
-                        <ul className='text-md'>
-                            <li className='mb-[2px]'>Website where you can learn math and physics with amazing teachers!</li>
-                            <img src="https://static.vecteezy.com/system/resources/previews/004/141/669/non_2x/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg" alt="website image" />
-                        </ul>
-                    </VerticalTimelineElement>
+                    {projects}
                 </VerticalTimeline>
             </div>
         </div>

@@ -23,6 +23,7 @@ const Navbar = () => {
               <div className='cursor-pointer' onClick={() => {goto('home')}}>Home</div>
               <div className='cursor-pointer' onClick={() => {goto('about')}}>About</div>
               <div className='cursor-pointer' onClick={() => {goto('skills')}}>Projects</div>
+              <div className='cursor-pointer' onClick={() => {goto('other-skills')}}>Skills</div>
               <div className='cursor-pointer' onClick={() => {goto('contact')}}>Contact me</div>
           </div>
         </div>
