@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import gsapMain from '../GSAPanimation/gsapMain';  
+
+
 
 const Main = () => {
+  useEffect(() => {
+    gsapMain();
+  }, [])
+
+
+
   return (
-    <div id="home" className='flex justify-center gap-[150px] bg-gray-100'>
+    <div id="home" className='main flex justify-center gap-[150px] bg-gray-100 blur-[8px]'>
       <div className='w-[600px] h-[900px] flex flex-col justify-center anton'>
         <div className='text-[38px]'>Hi there, I am</div>
         <div className='text-[80px] text-neon-green drop-shadow-sm'>Jakub Sztobryn</div>
