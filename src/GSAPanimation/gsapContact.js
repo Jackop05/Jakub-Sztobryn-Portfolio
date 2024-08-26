@@ -9,7 +9,7 @@ const gsapContact = (ref) => {
                 gsap.fromTo(
                     ref.current, 
                     { filter: 'blur(8px)' },
-                    { filter: 'blur(0px)', duration: 1.5, scrollTrigger: {
+                    { filter: 'blur(0px)', duration: 1.2, scrollTrigger: {
                         trigger: ref.current,
                         start: 'top bottom',
                         end: 'bottom top',  
