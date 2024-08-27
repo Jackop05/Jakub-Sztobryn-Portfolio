@@ -26,13 +26,13 @@ const TechnologiesAndProjects = () => {
     const projects = projectsData?.map((project, index) => {
         return (
             <VerticalTimelineElement
-                className="vertical-timeline-element--work"
+                className="vertical-timeline-element--work cursor-pointer hover:scale-105 transition-all duration-[300ms]"
                 contentStyle={{ background: 'white', color: 'black' }}
                 contentArrowStyle={{ borderRight: '7px solid  #2e2e4d' }}
                 iconStyle={{ background: '#3370FF', color: '#fff', fontWeight: 'bold' }}
                 icon={icons[project.iconIndex]}
             >
-                <div className="text-3xl text-neon-green mb-[2px]">{project.name}</div>
+                <div className="text-3xl text-neon-green mb-[2px] ">{project.name}</div>
                 <div className="text-md mb-4 italic">
                     {
                         project.technologies.map((technology, index) => {

@@ -4,8 +4,6 @@
 
 
 
-
-
 html {
     scroll-behavior: smooth;
   }
@@ -17,5 +15,14 @@ html {
 .kanit {
     font-family: "Kanit", sans-serif;
 }
-  
+
+.triangle-bg {
+    background-color: #111;
+    clip-path: polygon(0 0, 100% 0, 100% 65%, 65% 100%, 0 100%);
+}
+
+.empty-letter {
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(255, 98, 0);
+}
   
