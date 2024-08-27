@@ -80,7 +80,7 @@ const TechnologiesAndProjects = () => {
                     </div>
                     <div ref={(el) => (scaleRefs.current[1] = el)} data-index="1" className='opacity-0 w-[100px] flex flex-col justify-center'>
                         <div className='mx-auto mb-2 rounded-full w-[80px] h-[80px] border-4 border-solid border-neon-blue bg-white flex flex-col justify-center cursor-pointer hover:scale-105 hover:shadow-xl transition-all duration-[300ms]'>
-                            <img src='/images/JAVA.png' alt="JAVA icon" className='rounded-full h-[60px] w-[100px] mx-auto' />
+                            <img src='/images/Java.png' alt="JAVA icon" className='rounded-full h-[60px] w-[100px] mx-auto' />
                         </div>
                         <div className='text-center text-xl'>Java</div>
                     </div>
