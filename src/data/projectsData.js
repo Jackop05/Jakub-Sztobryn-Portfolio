@@ -4,7 +4,7 @@ const projectData = [
         name: 'Korepetycje Online',
         technologies: ['React.js', 'Node.js', 'MongoDB', 'Tailwind'],
         description: 'Website where you can learn math and physics with amazing teachers!',
-        image: '../public/images/korepetycjeOnline-app-preview.png',
+        image: '/images/korepetycjeOnline-app-preview.png',
     },
     {
         iconIndex: 1,
