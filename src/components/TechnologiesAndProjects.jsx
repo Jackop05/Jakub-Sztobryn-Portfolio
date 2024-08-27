@@ -6,6 +6,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import gsapSkills from '../GSAPanimation/gsapSkills';
 import projectsData from '../data/projectsData';
+import { Link } from 'react-router-dom';
 
 
 
@@ -32,22 +33,24 @@ const TechnologiesAndProjects = () => {
                 iconStyle={{ background: '#3370FF', color: '#fff', fontWeight: 'bold' }}
                 icon={icons[project.iconIndex]}
             >
+                <Link to={project.link}>
                 <div className="text-3xl text-neon-green mb-[2px] ">{project.name}</div>
-                <div className="text-md mb-4 italic">
-                    {
-                        project.technologies.map((technology, index) => {
-                            if(index == project.technologies.length - 1){
-                                return <span className='text-neon-blue drop-shadow-sm'>{technology}</span>
-                            } else {
-                                return <span className='text-neon-blue drop-shadow-sm'>{technology}, </span>
-                            }
-                        })
-                    }
-                </div>
-                <ul className='text-md'>
-                    <li className='mb-[2px]'>{project.description}</li>
-                    <img src={project.image} alt="website image" />
-                </ul>
+                    <div className="text-md mb-4 italic">
+                        {
+                            project.technologies.map((technology, index) => {
+                                if(index == project.technologies.length - 1){
+                                    return <span className='text-neon-blue drop-shadow-sm'>{technology}</span>
+                                } else {
+                                    return <span className='text-neon-blue drop-shadow-sm'>{technology}, </span>
+                                }
+                            })
+                        }
+                    </div>
+                    <ul className='text-md'>
+                        <li className='mb-[2px]'>{project.description}</li>
+                        <img src={project.image} alt="website image" />
+                    </ul>
+                </Link>
             </VerticalTimelineElement>
         )
     })

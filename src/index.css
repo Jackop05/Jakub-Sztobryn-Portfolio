@@ -20,9 +20,10 @@ html {
     background-color: #111;
     clip-path: polygon(0 0, 100% 0, 100% 65%, 65% 100%, 0 100%);
 }
-
-.empty-letter {
-    color: transparent;
-    -webkit-text-stroke: 2px rgb(255, 98, 0);
+.triangle-bg-1 {
+    clip-path: polygon(0 0, 100% 0, 100% 65%, 65% 100%, 0 100%);
 }
-  
+.triangle-bg-2 {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 100%, 0 65%);
+}
+    

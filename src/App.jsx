@@ -9,7 +9,7 @@ import TechnologiesAndProjects from './components/TechnologiesAndProjects';
 import Contact from './components/Contact';
 import Softskills from './components/SoftSkills';
 
-import Allegro from './portfolio-websites/AllegroWebsite';
+import PortfolioWebsite from './components/PortfolioWebsite';
 
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<MainElement />} />
-        <Route path="/project/allegro-clone" element={<Allegro />} />
+        <Route path="/project/:param" element={<PortfolioWebsite />} />
       </Routes>
     </Router>
   )
