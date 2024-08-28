@@ -20,11 +20,11 @@ const Navbar = () => {
         <div className='anton text-[50px] cursor-pointer drop-shadow-sm'>Jakub <span className='text-neon-green'>Sztobryn</span></div>
         <div className='flex flex-col justify-center'>
           <div className='anton text-neon-blue text-3xl flex gap-8 drop-shadow-2xl text-center'>
-              <div className='cursor-pointer' onClick={() => {goto('home')}}>Home</div>
-              <div className='cursor-pointer' onClick={() => {goto('about')}}>About</div>
-              <div className='cursor-pointer' onClick={() => {goto('skills')}}>Projects</div>
-              <div className='cursor-pointer' onClick={() => {goto('other-skills')}}>Skills</div>
-              <div className='cursor-pointer' onClick={() => {goto('contact')}}>Contact me</div>
+              <div className='cursor-pointer transition-all duration-[300ms] hover:scale-110' onClick={() => {goto('home')}}>Home</div>
+              <div className='cursor-pointer transition-all duration-[300ms] hover:scale-110' onClick={() => {goto('about')}}>About</div>
+              <div className='cursor-pointer transition-all duration-[300ms] hover:scale-110' onClick={() => {goto('skills')}}>Projects</div>
+              <div className='cursor-pointer transition-all duration-[300ms] hover:scale-110' onClick={() => {goto('other-skills')}}>Skills</div>
+              <div className='cursor-pointer transition-all duration-[300ms] hover:scale-110' onClick={() => {goto('contact')}}>Contact me</div>
           </div>
         </div>
     </div>

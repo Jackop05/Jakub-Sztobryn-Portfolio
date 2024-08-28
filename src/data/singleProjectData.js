@@ -40,8 +40,8 @@ const singleProjectData = [
                 description: 'The Allegro Clone project is a fully functional e-commerce platform developed using React for the frontend, Node.js and Express for the backend, and MongoDB as the database. It features user authentication, product management, and a shopping cart system',
             },
         ],
-        color: 'orange-600', // Changed to orange-600
-        rgbColor: 'rgb(255, 153, 0)', // RGB equivalent of orange-600
+        color: 'orange-600', 
+        rgbColor: 'rgb(234, 88, 12)', // RGB equivalent of orange-600
     },
     {
         param: 'korepetycje-online',
@@ -60,8 +60,8 @@ const singleProjectData = [
                 description: 'An interactive platform for learning math and physics online.',
             },
         ],
-        color: 'blue-500',
-        rgbColor: 'rgb(37, 99, 235)', // RGB equivalent of blue-500
+        color: 'green-500',
+        rgbColor: 'rgb(34, 197, 94)', // RGB equivalent of green-500
     },
     {
         param: 'messenger-clone',
@@ -80,8 +80,8 @@ const singleProjectData = [
                 description: 'A clone of the popular Messenger app with chat functionality.',
             },
         ],
-        color: 'green-500',
-        rgbColor: 'rgb(34, 197, 94)', // RGB equivalent of green-500
+        color: 'blue-500',
+        rgbColor: 'rgb(59, 130, 246)', // RGB equivalent of blue-500
     },
     {
         param: 'maze-game',
@@ -140,8 +140,8 @@ const singleProjectData = [
                 description: 'An online platform for designing and buying custom shirts.',
             },
         ],
-        color: 'pink-500',
-        rgbColor: 'rgb(236, 72, 153)', // RGB equivalent of pink-500
+        color: 'yellow-500',
+        rgbColor: 'rgb(234, 179, 8)', // RGB equivalent of yellow-500
     },
     {
         param: 'apple-clone',
@@ -160,8 +160,8 @@ const singleProjectData = [
                 description: 'A replica of the Apple website featuring all major products.',
             },
         ],
-        color: 'gray-500',
-        rgbColor: 'rgb(107, 114, 128)', // RGB equivalent of gray-500
+        color: 'gray-400',
+        rgbColor: 'rgb(156, 163, 175)', // RGB equivalent of gray-400
     },
     {
         param: 'weather-app',
