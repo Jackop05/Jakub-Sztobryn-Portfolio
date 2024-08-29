@@ -55,8 +55,8 @@ const AllegroWebsite = () => {
       <div className='bg-slate-800 text-white anton pt-40 px-60 text-xl'>
         <div className='flex'>
           <div>
-            <div className='flex gap-24 w-[90%] mb-24'>
-              <div className=''>
+            <div className='flex gap-24 mb-24'>
+              <div className=' '>
                 <div className='text-4xl mb-10 w-[400px]'>{project.upperTitle}</div>
                 <div className='flex gap-20'>
                   <div className='w-[50%]'>
@@ -70,7 +70,7 @@ const AllegroWebsite = () => {
                     ))}
                     <div className='flex flex-col'>
                       <div className='relative mt-8 text-3xl'>
-                        See it for yourself now and <span style={{ color }} className="cursor-pointer">click here</span>!
+                        See it for yourself now and <Link to="https://github.com/Jackop05/Weather-app/tree/master" target="_blank" ><span style={{ color: rgbColor }} className="cursor-pointer">click here</span></Link>!
                       </div>
                     </div>
                   </div>
@@ -81,8 +81,8 @@ const AllegroWebsite = () => {
             <div className='p-10'>
               {project.project.map((item, index) => (
                 <div key={index} className={`flex gap-8 pb-8 bg-slate-900 p-8 ${index % 2 === 0 ? '' : 'flex-row-reverse'}`}>
-                  <img src={item.image} className='w-[60%] border-2 border-black' alt={item.title} />
-                  <div>
+                  <img src={item.image} className='w-[50%]' alt={item.title} />
+                  <div className=''>
                     <div className='text-3xl mb-10'>{item.title}</div>
                     <div>{item.description}</div>
                   </div>

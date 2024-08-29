@@ -33,11 +33,11 @@ const projectData = [
     },
     {
         iconIndex: 4,
-        name: 'Receipt app',
+        name: 'Recipe app',
         technologies: ['React.js', 'Tailwind', 'API calls'],
         description: 'Find your favorite recipes using an easy-to-navigate interface.',
-        image: '/images/receipt-app-preview.png',
-        link: '/project/receipt-app',
+        image: '/images/recipe-app-preview.png',
+        link: '/project/recipe-app',
     },
     {
         iconIndex: 5,

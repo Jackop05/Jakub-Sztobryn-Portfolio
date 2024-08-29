@@ -104,25 +104,35 @@ const singleProjectData = [
         rgbColor: 'rgb(139, 92, 246)', // RGB equivalent of purple-500
     },
     {
-        param: 'receipt-app',
-        name: 'Receipt App',
-        upperTitle: 'Find your favorite recipes',
-        text1: [
-            'An easy-to-navigate interface for discovering recipes.',
+        "param": "recipe-app",
+        "name": "Recipe App",
+        "upperTitle": "Find your favorite recipes",
+        "text1": [
+            "Discover a vast collection of recipes from around the world with an intuitive and easy-to-navigate interface. Whether you're a seasoned chef or a beginner, our app makes it simple to find dishes that match your taste and skill level. Explore new cuisines and experiment with diverse ingredients to create your next culinary masterpiece."
         ],
-        text2: [
-            'Utilizes API calls to gather and display a variety of recipes.',
+        "text2": [
+            "Our application harnesses the power of API calls to aggregate a wide variety of recipes, ensuring that you have access to the freshest and most diverse options available. Each search delivers detailed instructions, ingredient lists, and beautiful images, making it easier than ever to decide what to cook next."
         ],
-        project: [
+        "project": [
             {
-                image: '/images/receipt-app-preview.png',
-                title: 'Receipt App',
-                description: 'An application to find and save your favorite recipes.',
+                "image": "/images/recipe/main.png",
+                "title": "Recipe App",
+                "description": "A comprehensive and responsive web application designed to help users explore, search, and discover a wide range of recipes. The app features a user-friendly interface that simplifies the process of finding the perfect meal, whether you're looking for something quick or an elaborate feast."
             },
+            {
+                "image": "/images/recipe/chicken.png",
+                "title": "Recipe Search",
+                "description": "With the powerful search functionality, users can effortlessly find recipes based on specific ingredients or meal types. Simply enter an ingredient in the search bar, and the app will display a curated list of delicious recipes, each accompanied by detailed cooking instructions and ingredient lists."
+            },
+            {
+                "image": "/images/recipe/responsive.png",
+                "title": "Responsive Design",
+                "description": "The app is built with a responsive design, ensuring that it adapts beautifully to any screen size. Whether you're using a mobile phone, tablet, or desktop, the Recipe App offers a seamless and enjoyable browsing experience, making it easy to cook up something new anytime, anywhere."
+            }
         ],
-        color: 'red-500',
-        rgbColor: 'rgb(239, 68, 68)', // RGB equivalent of red-500
-    },
+        "color": "red-500",
+        "rgbColor": "rgb(239, 68, 68)" // RGB equivalent of red-500
+    },      
     {
         param: 'shirt-shop',
         name: '3D Shirts Shop',
@@ -164,25 +174,37 @@ const singleProjectData = [
         rgbColor: 'rgb(156, 163, 175)', // RGB equivalent of gray-400
     },
     {
-        param: 'weather-app',
-        name: 'Weather App',
-        upperTitle: 'Get real-time weather updates',
-        text1: [
-            'A weather forecasting app providing real-time data with a clean UI.',
+        "param": "weather-app",
+        "name": "Weather App",
+        "upperTitle": "Get real-time weather updates",
+        "text1": [
+            "Weather App is a comprehensive tool that allows users to obtain real-time weather information for any location worldwide. With its clean and intuitive user interface, the app provides users with essential weather details such as temperature, wind speed, humidity, and atmospheric conditions. Whether you're planning your day or preparing for a trip, Weather App ensures that you have the latest and most accurate weather data at your fingertips."
         ],
-        text2: [
-            'Integrates API calls to gather weather data from various sources.',
+        "text2": [
+            "The app integrates advanced API calls to retrieve weather data from various trusted sources, ensuring the reliability and accuracy of the information presented. By consolidating data from multiple inputs, the Weather App delivers a well-rounded overview of current and forecasted weather conditions. This makes it an indispensable tool for users who need timely weather updates to make informed decisions."
         ],
-        project: [
+        "project": [
             {
-                image: '/images/weather-app-preview.png',
-                title: 'Weather App',
-                description: 'An application providing live weather updates and forecasts.',
+                "image": "/images/weather-app/sunny.png",
+                "title": "Live Weather Updates",
+                "description": "The Weather App provides up-to-the-minute weather updates, giving users accurate information about current conditions and forecasts for the days ahead. Stay informed with real-time data to help you plan your daily activities and outdoor events."
             },
+            {
+                "image": "/images/weather-app/foggy.png",
+                "title": "Dynamic Weather Conditions",
+                "description": "The app features visually engaging and context-sensitive weather icons that change dynamically based on the current conditions. Whether it's sunny, foggy, rainy, or snowy, the app presents these conditions in a clear and appealing visual format."
+            },
+            {
+                "image": "/images/weather-app/responsive.png",
+                "title": "Responsive Design",
+                "description": "Designed with a responsive layout, the Weather App adapts seamlessly to various screen sizes, providing a consistent and user-friendly experience on smartphones, tablets, and desktops. The app ensures that users can easily access weather information regardless of the device they are using."
+            }
         ],
-        color: 'cyan-500',
-        rgbColor: 'rgb(6, 182, 212)', // RGB equivalent of cyan-500
-    },
+        "color": "cyan-500",
+        "rgbColor": "rgb(6, 182, 212)" // RGB equivalent of cyan-500
+    }
+    
+    
 ];
 
 export default singleProjectData;
