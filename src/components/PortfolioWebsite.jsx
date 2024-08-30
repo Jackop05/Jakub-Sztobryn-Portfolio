@@ -82,7 +82,7 @@ const AllegroWebsite = () => {
               {project.project.map((item, index) => (
                 <div key={index} className={`flex gap-8 pb-8 bg-slate-900 p-8 ${index % 2 === 0 ? '' : 'flex-row-reverse'}`}>
                   <img src={item.image} className='w-[50%]' alt={item.title} />
-                  <div className=''>
+                  <div className='flex flex-col justify-center'>
                     <div className='text-3xl mb-10'>{item.title}</div>
                     <div>{item.description}</div>
                   </div>

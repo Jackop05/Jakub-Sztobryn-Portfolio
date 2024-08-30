@@ -41,7 +41,7 @@ const singleProjectData = [
             },
         ],
         color: 'orange-600', 
-        rgbColor: 'rgb(234, 88, 12)', // RGB equivalent of orange-600
+        rgbColor: 'rgb(234, 88, 12)', 
     },
     {
         param: 'korepetycje-online',
@@ -61,7 +61,7 @@ const singleProjectData = [
             },
         ],
         color: 'green-500',
-        rgbColor: 'rgb(34, 197, 94)', // RGB equivalent of green-500
+        rgbColor: 'rgb(34, 197, 94)', 
     },
     {
         param: 'messenger-clone',
@@ -81,23 +81,38 @@ const singleProjectData = [
             },
         ],
         color: 'blue-500',
-        rgbColor: 'rgb(59, 130, 246)', // RGB equivalent of blue-500
+        rgbColor: 'rgb(59, 130, 246)', 
     },
     {
         param: 'maze-game',
         name: 'Maze Game',
         upperTitle: 'Find the shortest path to exit',
         text1: [
-            'A game where you can find the shortest path to exit a maze using BFS algorithm.',
+            "Maze Game is an interactive and engaging puzzle where players navigate through a grid-based labyrinth, aiming to find the shortest path to the exit using the Breadth-First Search (BFS) algorithm. Whether you're a fan of classic mazes or someone looking to challenge your problem-solving skills, this game offers a dynamic and visually stimulating experience. With customizable maze sizes, intuitive controls, and real-time feedback, Maze Game provides hours of entertainment while subtly introducing players to the fundamental concepts of graph traversal and pathfinding algorithms."
         ],
         text2: [
-            'Experience the challenge of solving mazes in an engaging environment.',
+            'Dive into the world of mazes with the Maze Game, where the thrill of solving complex puzzles meets the elegance of modern web development. Built using React and other cutting-edge web technologies, the game offers smooth animations and a sleek design that enhances the user experience. The implementation of the BFS algorithm not only ensures that the pathfinding is accurate and efficient, but also provides an educational insight into one of the key algorithms used in computer science.'
         ],
         project: [
             {
-                image: '/images/mazeGame-app-preview.png',
+                image: '/images/maze-game/main.png',
                 title: 'Maze Game',
-                description: 'A challenging game where players navigate through mazes.',
+                description: 'An interactive game where you solve mazes using the BFS algorithm. Navigate through a grid, set your start and end points, and watch as the algorithm finds the shortest path to the exit. Customize the maze size and layout to create your unique challenges.',
+            },
+            {
+                image: '/images/maze-game/holdAndDraw.png',
+                title: 'Customizable Maze Creation',
+                description: 'Easily create custom mazes by clicking or dragging to set walls. Define your own start and end points to personalize the challenge, making each game a unique experience. The intuitive controls ensure that creating complex mazes is both fun and easy.',
+            },
+            {
+                image: '/images/maze-game/solved.png',
+                title: 'Algorithm in Action',
+                description: 'Witness the BFS algorithm in action as it efficiently finds the shortest path through the maze. The real-time visualization of the algorithm’s process provides an educational experience, demonstrating how pathfinding works in a clear and engaging way.',
+            },
+            {
+                image: '/images/maze-game/big.png',
+                title: 'Scalable Maze Sizes',
+                description: 'Tackle mazes of varying sizes, from simple 5x5 grids to more complex 50x50 layouts. The game’s responsive design ensures that it remains accessible and enjoyable, regardless of the device or screen size you’re using.',
             },
         ],
         color: 'purple-500',
@@ -131,48 +146,73 @@ const singleProjectData = [
             }
         ],
         "color": "red-500",
-        "rgbColor": "rgb(239, 68, 68)" // RGB equivalent of red-500
+        "rgbColor": "rgb(239, 68, 68)" 
     },      
     {
         param: 'shirt-shop',
         name: '3D Shirts Shop',
         upperTitle: 'Design and purchase custom shirts',
         text1: [
-            'An interactive 3D shop where users can design and purchase custom shirts.',
+            '3D Shirts Shop is an innovative platform that allows users to create and customize their own shirts in a fully interactive 3D environment. Users can select from a diverse range of colors, styles, and designs, ensuring that each shirt is a unique reflection of their personality and taste. The application is designed to be user-friendly, making it accessible for everyone, regardless of their technical background.'
         ],
         text2: [
-            'Combines 3D modeling and web technologies for an immersive shopping experience.',
+            'This application leverages cutting-edge 3D modeling and modern web technologies to provide an immersive shopping experience that feels both dynamic and engaging. With realistic shirt previews that respond to user interactions, shoppers can see their designs come to life in real-time, adjusting colors and patterns with ease. The platform’s intuitive controls and sleek user interface guide users through the customization process, ensuring that even those unfamiliar with technology can navigate with confidence.'
         ],
         project: [
             {
-                image: '/images/customShirt-app-preview.png',
+                image: '/images/shirt-shop/main.png',
                 title: '3D Shirts Shop',
-                description: 'An online platform for designing and buying custom shirts.',
+                description: 'A platform that allows users to customize shirts in 3D, offering a unique shopping experience.'
             },
+            {
+                image: '/images/shirt-shop/colors.png',
+                title: 'Color Selection',
+                description: 'Choose from an extensive palette of colors to create the perfect shirt that matches your style and mood.'
+            },
+            {
+                image: '/images/shirt-shop/files.png',
+                title: 'Image Upload',
+                description: 'Easily upload your own images or graphics to add a personal touch to your shirt design, making it truly one-of-a-kind.'
+            }
         ],
         color: 'yellow-500',
-        rgbColor: 'rgb(234, 179, 8)', // RGB equivalent of yellow-500
-    },
+        rgbColor: 'rgb(234, 179, 8)', 
+    },       
     {
         param: 'apple-clone',
         name: 'Apple Clone',
-        upperTitle: 'Explore the Apple experience',
+        upperTitle: 'Explore the Apple Experience',
         text1: [
-            'A clone of the Apple website with smooth animations and sleek design.',
+            "The Apple Clone is a meticulously crafted replica of the Apple website, designed to capture the essence of Apple's iconic aesthetic. This project showcases a blend of smooth animations and a sleek, modern design that mimics the original interface, allowing users to navigate effortlessly through various sections. With attention to detail, the clone features interactive elements that provide a polished and engaging experience, closely resembling the fluidity found in Apple's real applications."
         ],
         text2: [
-            'Built with modern web technologies for a seamless experience.',
+            'Built using the latest web technologies, this Apple Clone ensures a seamless user experience across all devices. Leveraging frameworks like React and Vite, it achieves fast loading times and dynamic content rendering, which are crucial for maintaining user engagement. The project incorporates responsive design principles, making it visually appealing on both mobile and desktop platforms. Additionally, advanced CSS animations and transitions enhance the overall interactivity, allowing users to enjoy a vibrant and lively interface.'
         ],
         project: [
             {
-                image: '/images/apple-app-preview.png',
-                title: 'Apple Clone',
-                description: 'A replica of the Apple website featuring all major products.',
+                image: '/images/apple/main.png',
+                title: 'Apple Clone Homepage',
+                description: 'The main page showcases the overall layout and design, reflecting the aesthetic of Apple’s official site with a focus on clean lines and simplicity.',
+            },
+            {
+                image: '/images/apple/rotating.png',
+                title: 'Interactive 3D Model',
+                description: 'An interactive 3D model feature that allows users to rotate and view products from different angles, enhancing the shopping experience.',
+            },
+            {
+                image: '/images/apple/slick-design.png',
+                title: 'Sleek Design Elements',
+                description: 'Highlights of the sleek design elements used throughout the site, emphasizing the use of modern typography and minimalistic visuals.',
+            },
+            {
+                image: '/images/apple/responsive.png',
+                title: 'Responsive Design',
+                description: 'A demonstration of the responsive capabilities, displaying how the site adapts beautifully to different screen sizes and orientations.',
             },
         ],
         color: 'gray-400',
-        rgbColor: 'rgb(156, 163, 175)', // RGB equivalent of gray-400
-    },
+        rgbColor: 'rgb(156, 163, 175)', 
+    },    
     {
         "param": "weather-app",
         "name": "Weather App",
@@ -201,7 +241,7 @@ const singleProjectData = [
             }
         ],
         "color": "cyan-500",
-        "rgbColor": "rgb(6, 182, 212)" // RGB equivalent of cyan-500
+        "rgbColor": "rgb(6, 182, 212)" 
     }
     
     
