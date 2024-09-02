@@ -1,10 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import gsapSoftskills from '../GSAPanimation/gsapSoftskills';
 import { gsap } from 'gsap';
-import skillsData from '../data/skillsData' 
-
-
-
+import skillsData from '../data/skillsData';
 
 const SoftSkills = () => {
   const [selectedSkill, setSelectedSkill] = useState(skillsData[0]);
@@ -29,22 +26,22 @@ const SoftSkills = () => {
   }, [selectedSkill]);
 
   return (
-    <div id="other-skills" className='flex justify-center gap-[150px]'>
-      <div className='w-[700px] h-[1000px] flex flex-col justify-center anton'>
-        <div className='text-[80px] text-neon-green drop-shadow-sm'>My skills</div>
+    <div id="other-skills" className="flex flex-col items-center p-4 lg:p-10">
+      <div className="w-full max-w-4xl flex flex-col justify-center anton">
+        <div className="text-4xl sm:text-5xl lg:text-6xl text-neon-green drop-shadow-sm text-center mb-8">My Skills</div>
         
         {/* Right text divs */}
-        <div className='text-2xl mb-2 right-text' ref={(el) => (rightTextRefs.current[0] = el)}>
+        <div className="text-lg sm:text-xl mb-2 right-text text-center" ref={(el) => (rightTextRefs.current[0] = el)}>
           I believe every programmer should be able to work in a team.
         </div>
-        <div className='text-2xl mb-16 right-text' ref={(el) => (rightTextRefs.current[1] = el)}>
+        <div className="text-lg sm:text-xl mb-16 right-text text-center" ref={(el) => (rightTextRefs.current[1] = el)}>
           Whether it comes to knowing how to divide work between people, 
           how to commit code without destroying others' work, 
           speaking fluently, or understanding project management fundamentals.
         </div>
 
-        <div className='flex gap-6 border-y-2 border-y-neon-blue p-8 rounded-xl'>
-          <div className='flex flex-col w-[40%] gap-0 text-xl'>
+        <div className="flex flex-col md:flex-row gap-6 border-y-2 border-y-neon-blue p-4 md:p-8 rounded-xl">
+          <div className="flex flex-col w-full md:w-[40%] gap-2 text-xl">
             {skillsData.map((skill, index) => (
               <div 
                 key={index} 
@@ -59,9 +56,9 @@ const SoftSkills = () => {
             ))}
           </div>
 
-          <div className='border-l-2 border-l-neon-blue pl-6 flex flex-col w-[60%] text-xl right-item' ref={rightDefinitionRef}>
-            <div className='text-[30px] text-neon-green drop-shadow-sm mb-4'>{selectedSkill.name}</div>
-            <div>{selectedSkill.definition}</div>
+          <div className="border-l-2 border-l-neon-blue pl-4 md:pl-6 flex flex-col w-full md:w-[60%] text-xl right-item" ref={rightDefinitionRef}>
+            <div className="text-2xl sm:text-3xl text-neon-green drop-shadow-sm mb-4 text-center">{selectedSkill.name}</div>
+            <div className="text-base sm:text-lg text-gray-200">{selectedSkill.definition}</div>
           </div>
         </div>
       </div>
