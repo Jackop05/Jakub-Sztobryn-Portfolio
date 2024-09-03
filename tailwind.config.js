@@ -7,10 +7,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        'neon-green': '#61F475',
-        'neon-blue': '#3370FF',
+        'neon-green': '#53F353',
+        'neon-blue': '#3B82F6',
         'lighter-blue': 'rgba(51, 112, 255, 0.70)',
-        'light': 'F2F5FF', 
+        'light': '#FCFCFC', 
+        'dark': '#262A2B',
+        'darker': '#1D1F20', 
       }
     },
   },

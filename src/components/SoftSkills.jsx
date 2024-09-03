@@ -26,11 +26,10 @@ const SoftSkills = () => {
   }, [selectedSkill]);
 
   return (
-    <div id="other-skills" className="flex flex-col items-center p-4 lg:p-10">
+    <div id="other-skills" className="flex flex-col items-center p-4 lg:p-10 bg-dark text-light">
       <div className="w-full max-w-4xl flex flex-col justify-center anton">
         <div className="text-4xl sm:text-5xl lg:text-6xl text-neon-green drop-shadow-sm text-center mb-8">My Skills</div>
         
-        {/* Right text divs */}
         <div className="text-lg sm:text-xl mb-2 right-text text-center" ref={(el) => (rightTextRefs.current[0] = el)}>
           I believe every programmer should be able to work in a team.
         </div>
@@ -49,7 +48,7 @@ const SoftSkills = () => {
                 onClick={() => {
                   setSelectedSkill(skill);
                 }}
-                className={`opacity-0 z-40 cursor-pointer p-2 left-item ${selectedSkill.name === skill.name ? 'shadow-md bg-lighter-blue text-white rounded-md' : 'text-gray-800'} transition-all duration-[300ms]`}
+                className={`opacity-0 z-40 cursor-pointer p-2 left-item ${selectedSkill.name === skill.name ? 'shadow-md bg-neon-blue text-white rounded-md' : 'text-lighter-blue'} transition-all duration-[300ms]`}
               >
                 {skill.name}
               </div>

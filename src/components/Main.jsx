@@ -7,7 +7,7 @@ const Main = () => {
   }, []);
 
   return (
-    <div id="home" className='main flex flex-col lg:flex-row justify-center items-center lg:gap-[150px] gap-[50px] bg-gray-100 p-6 sm:p-10 lg:py-52'>
+    <div id="home" className='main flex flex-col lg:flex-row justify-center items-center lg:gap-[150px] gap-[50px] text-light bg-darker p-6 sm:p-10 lg:py-52'>
       <div className='w-full max-w-[600px] flex flex-col justify-center anton text-center lg:text-left'>
         <div className='text-[28px] sm:text-[38px]'>Hi there, I am</div>
         <div className='text-[50px] sm:text-[60px] lg:text-[80px] text-neon-green drop-shadow-sm'>Jakub Sztobryn</div>

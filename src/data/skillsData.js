@@ -1,6 +1,6 @@
 const skillsData = [
     {
-      name: 'English B1/C2',
+      name: 'English B2',
       definition: 'I am great in fluent speaking and understanding English. Got 97% on extended matura exam last year and currently seeking certification to formalize my communication skills.',
     },
     {

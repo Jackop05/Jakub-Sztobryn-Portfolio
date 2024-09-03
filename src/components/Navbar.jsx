@@ -11,12 +11,12 @@ const Navbar = () => {
         block: 'start',
       });
     }
-    setIsOpen(false); // Close menu after navigation on small screens
+    setIsOpen(false);
   }
 
   return (
-    <div className='px-6 sm:px-10 py-4 sm:py-6 w-screen fixed flex justify-between items-center z-50 backdrop-blur-sm bg-white/80'>
-      <div className='anton text-[30px] sm:text-[40px] lg:text-[50px] cursor-pointer drop-shadow-sm'>
+    <div className='px-6 sm:px-10 py-2 sm:py-4 w-screen fixed flex justify-between items-center z-50 backdrop-blur-sm bg-dark/80 text-light'>
+      <div className='anton text-[25px] sm:text-[30px] lg:text-[40px] cursor-pointer drop-shadow-sm'>
         Jakub <span className='text-neon-green'>Sztobryn</span>
       </div>
       <div className='flex lg:hidden'>

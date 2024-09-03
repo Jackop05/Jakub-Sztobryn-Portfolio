@@ -10,7 +10,7 @@ const About = () => {
   }, []);
 
   return (
-    <div id="about" className='flex flex-col lg:flex-row justify-center lg:gap-[40px] gap-[20px] py-20'>
+    <div id="about" className='flex flex-col lg:flex-row justify-center lg:gap-[40px] gap-[20px] py-20 bg-dark text-light'>
       <div className='flex flex-col justify-center w-full lg:w-[30%] anton'>
         <div 
           className='opacity-0 relative lg:top-[20px] text-[30px] lg:text-[40px] text-lighter-blue text-center lg:text-right question' 

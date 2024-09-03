@@ -28,13 +28,13 @@ const TechnologiesAndProjects = () => {
         return (
             <VerticalTimelineElement
                 className="vertical-timeline-element--work cursor-pointer hover:scale-105 transition-all duration-[300ms]"
-                contentStyle={{ background: 'white', color: 'black' }}
+                contentStyle={{ background: '#fcfcfc', color: 'black' }}
                 contentArrowStyle={{ borderRight: '7px solid  #2e2e4d' }}
                 iconStyle={{ background: '#3370FF', color: '#fff', fontWeight: 'bold' }}
                 icon={icons[project.iconIndex]}
             >
                 <Link to={project.link}>
-                <div className="text-3xl text-neon-green mb-[2px] ">{project.name}</div>
+                    <div className="text-3xl text-neon-green mb-[2px] ">{project.name}</div>
                     <div className="text-md mb-4 italic">
                         {
                             project.technologies.map((technology, index) => {
@@ -58,7 +58,7 @@ const TechnologiesAndProjects = () => {
 
     
     return (
-        <div id="skills" className='w-screen flex justify-center bg-gray-100 anton py-[100px]'>
+        <div id="skills" className='w-screen flex justify-center bg-darker text-light anton py-[100px]'>
             <div className='w-[900px]'>
                 <div className=''>
                     <div className='text-[80px] text-neon-green drop-shadow-sm mb-2 text-left'>
