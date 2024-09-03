@@ -9,7 +9,7 @@ const skillsData = [
     },
     {
       name: 'Design',
-      definition: 'Design skills include understanding UI/UX principles, creating wireframes, and working with design tools to build intuitive and visually appealing user interfaces.',
+      definition: 'Design sKills include understanding UI/UX principles, creating wireframes, and working with design tools to build intuitive and visually appealing user interfaces.',
     },
     {
       name: 'Git',

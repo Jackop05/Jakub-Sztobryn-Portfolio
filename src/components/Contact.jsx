@@ -1,5 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
+import emailjs from 'emailjs-com';
 import gsapContact from '../GSAPanimation/gsapContact';
+
+
 
 const ContactMe = () => {
     const ref = useRef();
@@ -9,7 +12,22 @@ const ContactMe = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log({ name, email, message });
+
+        emailjs.send(
+            import.meta.env.VITE_SERVICE_ID, // Use VITE_ prefix
+            import.meta.env.VITE_TEMPLATE_ID,
+            {
+                from_name: name,
+                from_email: email,
+                message: message,
+            },
+            import.meta.env.VITE_PUBLIC_KEY
+        ).then((result) => {
+            console.log('Email successfully sent!', result.text);
+        }).catch((error) => {
+            console.error('Error sending email:', error);
+        });
+
         setName('');
         setEmail('');
         setMessage('');
@@ -19,11 +37,24 @@ const ContactMe = () => {
         gsapContact(ref);
     }, []);
 
+
+
     return (
         <div className="p-6 sm:p-10 lg:p-[100px] min-h-[600px] flex flex-col justify-center bg-darker text-light">
             <div ref={ref} className="contact bg-dark blur-[8px] w-full max-w-[400px] anton mx-auto px-4 sm:px-6 py-8 border-0 rounded-2xl shadow-md">
                 <div id="contact" className="text-[30px] sm:text-[40px] font-bold mb-6 sm:mb-10 text-center">Contact Me</div>
                 <form onSubmit={handleSubmit}>
+                    <div className="mb-6 sm:mb-8">
+                        <label className="ml-2 sm:ml-4 block text-sm font-medium text-gray-300" htmlFor="name">Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                            required
+                            className="mt-1 text-sm font-sans block w-full p-2 border-darker border-b-neon-blue border-[2px] bg-darker rounded-full outline-none px-3 sm:px-4"
+                        />
+                    </div>
                     <div className="mb-6 sm:mb-8">
                         <label className="ml-2 sm:ml-4 block text-sm font-medium text-gray-300" htmlFor="email">Email</label>
                         <input
