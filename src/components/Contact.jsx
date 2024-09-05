@@ -10,11 +10,13 @@ const ContactMe = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
+
+    
     const handleSubmit = (e) => {
         e.preventDefault();
 
         emailjs.send(
-            import.meta.env.VITE_SERVICE_ID, // Use VITE_ prefix
+            import.meta.env.VITE_SERVICE_ID,
             import.meta.env.VITE_TEMPLATE_ID,
             {
                 from_name: name,

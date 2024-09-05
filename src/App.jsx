@@ -15,7 +15,7 @@ import PortfolioWebsite from './components/PortfolioWebsite';
 function App() {
   const MainElement = () => {
     return (
-        <div className='h-screen w-screen bg-darker  overflow-x-hidden'>
+        <div className='h-screen w-screen bg-darker overflow-x-hidden'>
           <Navbar />
           <Main />
           <About />
