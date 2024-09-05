@@ -10,8 +10,8 @@ const About = () => {
   }, []);
 
   return (
-    <div id="about" className='flex flex-col lg:flex-row justify-center lg:gap-[40px] gap-[20px] py-20 bg-dark text-light'>
-      <div className='flex flex-col justify-between self-end h-[300px] w-full lg:w-[30%] anton'>
+    <div id="about" className='flex flex-col lg:flex-row justify-center lg:gap-[40px] gap-[20px] py-20 bg-dark text-light px-4'>
+      <div className='flex flex-col justify-between self-end h-auto lg:h-[300px] w-full lg:w-[30%] anton mb-12 lg:mb-0'>
         <div 
           className='opacity-0 relative text-[30px] lg:text-[40px] text-lighter-blue text-center lg:text-right question' 
           ref={(el) => (questionsRef.current[0] = el)}
@@ -28,10 +28,10 @@ const About = () => {
           data-index="2"
         >Best programming language?</div>
       </div>
-      <div className='flex flex-col justify-center w-full lg:w-[70%] anton'>
-        <div className='w-full max-w-[750px] h-auto flex flex-col justify-center anton mx-auto'>
-          <div className='text-[40px] lg:text-[80px] text-neon-green drop-shadow-sm mb-6 text-center lg:text-left'>About me</div>
-          <div className='h-[300px] flex flex-col justify-between'>
+      <div className='flex flex-col justify-center w-full lg:w-[70%] anton self-start'>
+        <div className='w-full max-w-[750px] h-auto flex flex-col justify-center anton mx-auto lg:mx-0'>
+          <div className='text-[40px] lg:text-[80px] text-neon-green drop-shadow-sm m-0 mb-6 text-center lg:text-left'>About me</div>
+          <div className='h-auto lg:h-[300px] mb-4 lg:mb-0 flex flex-col justify-between m-0'>
             <div 
               className='opacity-0 text-lg lg:text-2xl mb-4' 
               ref={(el) => (rightElementsRef.current[0] = el)} 

@@ -25,6 +25,8 @@ const SoftSkills = () => {
     }
   }, [selectedSkill]);
 
+
+  
   return (
     <div id="other-skills" className="flex flex-col items-center p-4 lg:p-10 bg-dark text-light">
       <div className="w-full max-w-4xl flex flex-col justify-center anton">

@@ -58,13 +58,13 @@ const TechnologiesAndProjects = () => {
 
     
     return (
-        <div id="skills" className='w-screen flex justify-center bg-darker text-light anton py-[100px]'>
-            <div className='w-[900px]'>
+        <div id="skills" className='w-screen flex justify-center bg-darker text-light anton py-[50px] mg:py-[100px]'>
+            <div className='w-[900px] p-4'>
                 <div className=''>
-                    <div className='text-[80px] text-neon-green drop-shadow-sm mb-2 text-left'>
+                    <div className='text-[50px] lg:text-[80px] text-neon-green drop-shadow-sm mb-6 text-left '>
                         Here are my projects...
                     </div>
-                    <div ref={(el) => (slideRefs.current[0] = el)} data-index="0" className='opacity-0 text-2xl mb-8'>
+                    <div ref={(el) => (slideRefs.current[0] = el)} data-index="0" className='opacity-0 text-2xl mb-4'>
                         You will find <span className='text-neon-blue drop-shadow-sm'>recreations of famous websites</span> like allegro or apple,  
                         <span className='text-neon-blue drop-shadow-sm'> my own creations</span> like app for extra lessons or maze game
                         and programs that <span className='text-neon-blue drop-shadow-sm'>uses algorithms</span> to give amazing effects. 
