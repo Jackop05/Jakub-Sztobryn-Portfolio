@@ -28,7 +28,7 @@ const SoftSkills = () => {
 
   
   return (
-    <div id="other-skills" className="flex flex-col items-center p-4 lg:p-10 bg-dark text-light pt-8">
+    <div id="other-skills" className="flex flex-col items-center p-4 lg:p-10 bg-dark text-light pt-16">
       <div className="w-full max-w-4xl flex flex-col justify-center anton">
         <div className="text-4xl sm:text-5xl lg:text-6xl text-neon-green drop-shadow-sm text-center mb-8">My Skills</div>
         
