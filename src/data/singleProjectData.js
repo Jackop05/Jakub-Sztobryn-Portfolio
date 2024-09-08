@@ -42,47 +42,85 @@ const singleProjectData = [
         ],
         color: 'orange-600', 
         rgbColor: 'rgb(234, 88, 12)', 
+        link: 'https://github.com/Jackop05/Allegro-clone',
     },
     {
-        param: 'korepetycje-online',
-        name: 'Korepetycje Online',
-        upperTitle: 'Learn math and physics online',
-        text1: [
-            'Website where you can learn math and physics with amazing teachers!',
+        "param": "korepetycje-online",
+        "name": "Korepetycje Online",
+        "upperTitle": "Learn math and physics online with expert tutors",
+        "text1": [
+            "Korepetycje Online is a comprehensive educational platform designed for students who want to improve their knowledge in math and physics. Whether you're preparing for exams, struggling with homework, or aiming to boost your grades, our platform connects you with experienced tutors who can help you succeed."
         ],
-        text2: [
-            'Utilizes modern web technologies to provide an engaging learning experience.',
+        "text2": [
+            "Built using modern web technologies such as React, Node.js, and Tailwind CSS, Korepetycje Online delivers a smooth and engaging learning experience. Students can book lessons, manage their schedules, and interact with tutors in real time, all through a user-friendly interface designed to make online learning easy and effective."
         ],
-        project: [
+        "project": [
             {
-                image: '/images/korepetycjeOnline-app-preview.png',
-                title: 'Korepetycje Online',
-                description: 'An interactive platform for learning math and physics online.',
+                "image": "/images/korepetycje/main.png",
+                "title": "Main Dashboard",
+                "description": "The main dashboard serves as the hub for students, offering easy access to available courses, personal schedules, and tutor profiles. With a clean and intuitive layout, students can quickly find and book the lessons they need."
             },
+            {
+                "image": "/images/korepetycje/lesson.png",
+                "title": "Lesson Booking Page",
+                "description": "The lesson booking page allows students to browse through different subjects, view tutor availability, and book lessons at convenient times. Each lesson is tailored to meet the student's academic needs, ensuring effective learning."
+            },
+            {
+                "image": "/images/korepetycje/myLessons.png",
+                "title": "My Lessons Page",
+                "description": "On the My Lessons page, students can manage all of their upcoming and past lessons. This section provides details on lesson timing, subjects, and tutor information, making it easy to stay organized and on track with their learning goals."
+            },
+            {
+                "image": "/images/korepetycje/register.png",
+                "title": "Registration Page",
+                "description": "The registration page is designed with simplicity and security in mind, allowing new users to quickly create an account and start booking lessons. Users can sign up using their email or social media accounts, making the process hassle-free."
+            }
         ],
-        color: 'green-500',
-        rgbColor: 'rgb(34, 197, 94)', 
-    },
+        "color": "green-500",
+        "rgbColor": "rgb(34, 197, 94)", 
+        "link": "https://github.com/Jackop05/Korepetycje-Online"
+    },    
     {
         param: 'messenger-clone',
         name: 'Messenger Clone',
         upperTitle: 'Chat with your friends seamlessly',
         text1: [
-            'Messenger is one of the most popular chat apps in the world.',
+          'Messenger is one of the most popular chat apps in the world.',
+          'It allows users to stay connected through messages, photos, and even video calls.',
+          'Our clone replicates the core functionality while introducing new features to enhance the overall chat experience.'
         ],
         text2: [
-            'Developed using modern frameworks to provide a smooth user experience.',
+          'Developed using modern frameworks to provide a smooth user experience.',
+          'Built with scalability and security in mind, this clone demonstrates the potential of current web technologies.',
+          'Optimized for both mobile and desktop platforms, ensuring seamless communication across devices.'
         ],
         project: [
-            {
-                image: '/images/messenger-app-preview.png',
-                title: 'Messenger Clone',
-                description: 'A clone of the popular Messenger app with chat functionality.',
-            },
+          {
+            image: '/images/messenger/chats.png',
+            title: 'Chats Overview',
+            description: 'View and manage your recent conversations with friends in an intuitive chat interface. The design is clean and focused on providing quick access to active chats and chat history.'
+          },
+          {
+            image: '/images/messenger/login.png',
+            title: 'Login Screen',
+            description: 'Secure and simple login process to start chatting in no time. Users can log in using their credentials or sign up with a new account, complete with password recovery options.'
+          },
+          {
+            image: '/images/messenger/settingsChat.png',
+            title: 'Chat Settings',
+            description: 'Customize your chat settings for a more personalized experience. Adjust notifications, enable dark mode, configure privacy options, and manage blocked users, all from a single, easy-to-use settings menu.'
+          },
+          {
+            image: '/images/messenger/chat.png',
+            title: 'Chat Interface',
+            description: 'Engage in real-time conversations with rich text support, emojis, file sharing, and more. The user-friendly interface ensures a fluid chatting experience, whether you\'re typing messages or sending multimedia content.'
+          },
+          
         ],
         color: 'blue-500',
-        rgbColor: 'rgb(59, 130, 246)', 
-    },
+        rgbColor: 'rgb(59, 130, 246)',
+        link: 'https://github.com/Jackop05/Messenger_clone',
+    },          
     {
         param: 'maze-game',
         name: 'Maze Game',
@@ -116,7 +154,8 @@ const singleProjectData = [
             },
         ],
         color: 'purple-500',
-        rgbColor: 'rgb(139, 92, 246)', // RGB equivalent of purple-500
+        rgbColor: 'rgb(139, 92, 246)', 
+        link: 'https://github.com/Jackop05/Maze-game'
     },
     {
         "param": "recipe-app",
@@ -146,7 +185,8 @@ const singleProjectData = [
             }
         ],
         "color": "red-500",
-        "rgbColor": "rgb(239, 68, 68)" 
+        "rgbColor": "rgb(239, 68, 68)",
+        link: 'https://github.com/Jackop05/Recipe-app',
     },      
     {
         param: 'shirt-shop',
@@ -177,6 +217,7 @@ const singleProjectData = [
         ],
         color: 'yellow-500',
         rgbColor: 'rgb(234, 179, 8)', 
+        link: 'https://github.com/Jackop05/Custom-shirts-shop',
     },       
     {
         param: 'apple-clone',
@@ -212,6 +253,7 @@ const singleProjectData = [
         ],
         color: 'gray-400',
         rgbColor: 'rgb(156, 163, 175)', 
+        link: 'https://github.com/Jackop05/Apple_page_clone',
     },    
     {
         "param": "weather-app",
@@ -241,7 +283,8 @@ const singleProjectData = [
             }
         ],
         "color": "cyan-500",
-        "rgbColor": "rgb(6, 182, 212)" 
+        "rgbColor": "rgb(6, 182, 212)",
+        link: 'https://github.com/Jackop05/Weather-app/tree/master',
     }
     
     

@@ -64,7 +64,7 @@ const PortfolioWebsite = () => {
                   ))}
                   <div className='flex flex-col'>
                     <div className='relative mt-8 text-2xl sm:text-3xl'>
-                      See it for yourself now and <a href="https://github.com/Jackop05/Weather-app/tree/master" target="_blank" rel="noopener noreferrer"><span style={{ color: rgbColor }} className="cursor-pointer">click here</span></a>!
+                      See it for yourself now and <a href={project.link} target="_blank" rel="noopener noreferrer"><span style={{ color: rgbColor }} className="cursor-pointer">click here</span></a>!
                     </div>
                   </div>
                 </div>

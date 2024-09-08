@@ -42,8 +42,8 @@ const ContactMe = () => {
 
 
     return (
-        <div className="p-6 sm:p-10 lg:p-[100px] min-h-[600px] flex flex-col justify-center bg-darker text-light">
-            <div ref={ref} className="contact bg-dark blur-[8px] w-full max-w-[400px] anton mx-auto px-4 sm:px-6 py-8 border-0 rounded-2xl shadow-md">
+        <div id="contact"  className="p-6 mt-16 sm:p-10 lg:p-[100px] min-h-[600px] flex flex-col justify-center bg-darker text-light">
+            <div ref={ref} className="bg-dark blur-[8px] w-full max-w-[400px] anton mx-auto px-4 sm:px-6 py-8 border-0 rounded-2xl shadow-md">
                 <div id="contact" className="text-[30px] sm:text-[40px] font-bold mb-6 sm:mb-10 text-center">Contact Me</div>
                 <form onSubmit={handleSubmit}>
                     <div className="mb-6 sm:mb-8">
