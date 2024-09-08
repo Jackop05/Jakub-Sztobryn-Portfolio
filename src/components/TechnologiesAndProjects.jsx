@@ -1,30 +1,28 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { FaShoppingCart , FaSchool, FaPen, FaPuzzlePiece, FaSun, FaHatCowboy, FaUtensils, FaApple } from 'react-icons/fa';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import gsapSkills from '../GSAPanimation/gsapSkills';
 import projectsData from '../data/projectsData';
 import { Link } from 'react-router-dom';
 
 
 
-gsap.registerPlugin(ScrollTrigger);
-
 
 
 const TechnologiesAndProjects = () => {
     const icons = [<FaSchool/>, <FaShoppingCart />, <FaPen />, <FaPuzzlePiece />, < FaUtensils/>, < FaHatCowboy/>, <FaApple />, <FaSun />];
 
+    const [indexCurrentTechnology, setIndexCurrentTechnology] = useState(0);
     const slideRefs = useRef([]);
     const scaleRefs = useRef([]);
+    const newProjects = projectsData['javascript'];
 
     useEffect(() => {
         gsapSkills(slideRefs, scaleRefs);
     }, []);
 
-    const projects = projectsData?.map((project, index) => {
+    const projects = newProjects?.map((project, index) => {
         return (
             <VerticalTimelineElement
                 className="vertical-timeline-element--work cursor-pointer hover:scale-105 transition-all duration-[300ms]"
@@ -53,12 +51,15 @@ const TechnologiesAndProjects = () => {
                 </Link>
             </VerticalTimelineElement>
         )
-    })
+    });
+
+
+    const selectedClass = 'scale-110 shadow-xl border-neon-green'
 
 
     
     return (
-        <div id="skills" className='w-screen flex justify-center bg-darker text-light anton py-[50px] mg:py-[100px]'>
+        <div id="skills" className='w-screen flex justify-center bg-darker text-light anton py-[50px] md:py-[100px]'>
             <div className='w-[900px] p-4'>
                 <div className=''>
                     <div className='text-[50px] lg:text-[80px] text-neon-green drop-shadow-sm mb-6 text-left '>
@@ -75,24 +76,26 @@ const TechnologiesAndProjects = () => {
                 </div>
 
                 <div className='flex justify-start gap-8 mb-32'>
-                    <div ref={(el) => (scaleRefs.current[0] = el)} data-index="0" className='opacity-0 w-[100px] flex flex-col justify-center'>
-                        <div className='mx-auto mb-2 rounded-full w-[80px] h-[80px] border-4 border-solid border-neon-blue bg-white flex flex-col justify-center cursor-pointer hover:scale-105 hover:shadow-xl transition-all duration-[300ms]'>
+                    <div ref={(el) => (scaleRefs.current[0] = el)} data-index="0" className='opacity-0 w-[100px] flex flex-col justify-center'  onClick={() => {setIndexCurrentTechnology(0)}}>
+                        <div className={`mx-auto mb-2 rounded-full w-[80px] h-[80px] border-4 border-solid border-neon-blue bg-white flex flex-col justify-center cursor-pointer hover:scale-110 hover:shadow-xl transition-all duration-[300ms] ${(indexCurrentTechnology == 0) && selectedClass}`}>
                             <img src={'/images/JS.png'} alt="JS icon" className='rounded-full h-[60px] mx-auto' />
                         </div>
                         <div className='text-center text-xl'>JavaScript</div>
                     </div>
-                    <div ref={(el) => (scaleRefs.current[1] = el)} data-index="1" className='opacity-0 w-[100px] flex flex-col justify-center'>
-                        <div className='mx-auto mb-2 rounded-full w-[80px] h-[80px] border-4 border-solid border-neon-blue bg-white flex flex-col justify-center cursor-pointer hover:scale-105 hover:shadow-xl transition-all duration-[300ms]'>
+                    {/*             !!!!!!   STILL IN PROGRESS   !!!!!
+                    <div ref={(el) => (scaleRefs.current[1] = el)} data-index="1" className='opacity-0 w-[100px] flex flex-col justify-center' onClick={() => {setIndexCurrentTechnology(1)}}>
+                        <div className={`mx-auto mb-2 rounded-full w-[80px] h-[80px] border-4 border-solid border-neon-blue bg-white flex flex-col justify-center cursor-pointer hover:scale-110 hover:shadow-xl transition-all duration-[300ms] ${(indexCurrentTechnology == 1) && selectedClass}`}>
                             <img src={'/images/Java.png'} alt="JAVA icon" className='rounded-full h-[60px] w-[100px] mx-auto' />
                         </div>
                         <div className='text-center text-xl'>Java</div>
                     </div>
-                    <div ref={(el) => (scaleRefs.current[2] = el)} data-index="2" className='opacity-0 w-[100px] flex flex-col justify-center'>
-                        <div className='mx-auto mb-2 rounded-full w-[80px] h-[80px] border-4 border-solid border-neon-blue bg-white flex flex-col justify-center cursor-pointer hover:scale-105 hover:shadow-xl transition-all duration-[300ms]'>
+                    <div ref={(el) => (scaleRefs.current[2] = el)} data-index="2" className='opacity-0 w-[100px] flex flex-col justify-center' onClick={() => {setIndexCurrentTechnology(2)}}>
+                        <div className={`mx-auto mb-2 rounded-full w-[80px] h-[80px] border-4 border-solid border-neon-blue bg-white flex flex-col justify-center cursor-pointer hover:scale-110 hover:shadow-xl transition-all duration-[300ms] ${(indexCurrentTechnology == 2) && selectedClass}`}>
                             <img src={'/images/C.png'} alt="C icon" className='rounded-full h-[60px] mx-auto' />
                         </div>
                         <div className='text-center text-xl'>C</div>
                     </div>
+                    */}
                 </div>
 
                 <VerticalTimeline>
