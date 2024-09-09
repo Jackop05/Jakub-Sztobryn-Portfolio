@@ -1,7 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { FaShoppingCart , FaSchool, FaPen, FaPuzzlePiece, FaSun, FaHatCowboy, FaUtensils, FaApple } from 'react-icons/fa';
+import { FaShoppingCart , FaSchool, FaPen, FaPuzzlePiece, FaSun, FaHatCowboy, FaUtensils, FaApple, FaCalculator } from 'react-icons/fa';
+import { AiFillBug } from 'react-icons/ai';
 import gsapSkills from '../GSAPanimation/gsapSkills';
 import projectsData from '../data/projectsData';
 import { Link } from 'react-router-dom';
@@ -11,12 +12,19 @@ import { Link } from 'react-router-dom';
 
 
 const TechnologiesAndProjects = () => {
-    const icons = [<FaSchool/>, <FaShoppingCart />, <FaPen />, <FaPuzzlePiece />, < FaUtensils/>, < FaHatCowboy/>, <FaApple />, <FaSun />];
+    const iconsArray = [
+        [<FaSchool/>, <FaShoppingCart />, <FaPen />, <FaPuzzlePiece />, < FaUtensils/>, < FaHatCowboy/>, <FaApple />, <FaSun />], 
+        [],  
+        [<FaPuzzlePiece />, <AiFillBug />, <FaCalculator />]
+    ];
 
     const [indexCurrentTechnology, setIndexCurrentTechnology] = useState(0);
     const slideRefs = useRef([]);
     const scaleRefs = useRef([]);
-    const newProjects = projectsData['javascript'];
+
+    const technologiesArray =['javascript', 'java', 'c'];
+    const currentTechnology = technologiesArray[indexCurrentTechnology];
+    const newProjects = projectsData[currentTechnology];
 
     useEffect(() => {
         gsapSkills(slideRefs, scaleRefs);
@@ -29,7 +37,7 @@ const TechnologiesAndProjects = () => {
                 contentStyle={{ background: '#fcfcfc', color: 'black' }}
                 contentArrowStyle={{ borderRight: '7px solid  #2e2e4d' }}
                 iconStyle={{ background: '#3370FF', color: '#fff', fontWeight: 'bold' }}
-                icon={icons[project.iconIndex]}
+                icon={iconsArray[indexCurrentTechnology][project.iconIndex]}
             >
                 <Link to={project.link}>
                     <div className="text-3xl text-neon-green mb-[2px] ">{project.name}</div>
@@ -89,13 +97,14 @@ const TechnologiesAndProjects = () => {
                         </div>
                         <div className='text-center text-xl'>Java</div>
                     </div>
+                    */}
                     <div ref={(el) => (scaleRefs.current[2] = el)} data-index="2" className='opacity-0 w-[100px] flex flex-col justify-center' onClick={() => {setIndexCurrentTechnology(2)}}>
                         <div className={`mx-auto mb-2 rounded-full w-[80px] h-[80px] border-4 border-solid border-neon-blue bg-white flex flex-col justify-center cursor-pointer hover:scale-110 hover:shadow-xl transition-all duration-[300ms] ${(indexCurrentTechnology == 2) && selectedClass}`}>
                             <img src={'/images/C.png'} alt="C icon" className='rounded-full h-[60px] mx-auto' />
                         </div>
                         <div className='text-center text-xl'>C</div>
                     </div>
-                    */}
+                    
                 </div>
 
                 <VerticalTimeline>

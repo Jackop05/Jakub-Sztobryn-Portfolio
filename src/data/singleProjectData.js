@@ -287,7 +287,112 @@ const singleProjectData = {
             "rgbColor": "rgb(6, 182, 212)",
             link: 'https://github.com/Jackop05/Weather-app/tree/master',
         }   
-    ]
+    ],
+    'c': [
+        {
+            param: 'cmaze-solver',
+            name: 'C Maze Solver',
+            upperTitle: 'Solve mazes efficiently using C',
+            text1: [
+                "C Maze Solver is an efficient tool designed to navigate and solve various maze configurations using algorithms like Depth-First Search (DFS) and A* search. This project demonstrates how to implement maze-solving techniques in C, providing insights into algorithm design and optimization.",
+            ],
+            text2: [
+                'With a focus on performance and clarity, CMazeSolver features a simple command-line interface where users can input maze structures and visualize the solving process. The underlying algorithms are optimized for speed, making it suitable for solving large and complex mazes quickly.',
+            ],
+            project: [
+                {
+                    image: '/images/cmaze-solver/maze.png',
+                    title: 'Maze Input',
+                    description: 'Input a maze configuration using simple text or graphical interface. The program accepts various formats to ensure flexibility and ease of use.',
+                },
+                {
+                    image: '/images/cmaze-solver/solving.png',
+                    title: 'Solving Process',
+                    description: 'Observe the maze-solving process in real-time as the algorithm explores paths and determines the optimal route to the exit. The visualization enhances understanding of how the algorithm operates.',
+                },
+                {
+                    image: '/images/cmaze-solver/results.png',
+                    title: 'Solution Output',
+                    description: 'View the final solution, showcasing the path taken to solve the maze. The output is presented clearly, allowing users to analyze and learn from the algorithmic approach.',
+                },
+            ],
+            color: 'red-500',
+            rgbColor: 'rgb(239, 68, 68)',
+            link: 'https://github.com/Jackop05/CMazeSolver',
+        },
+        {
+            param: 'langtons-ant',
+            name: 'Langton\'s Ant',
+            upperTitle: 'Explore the world of cellular automata',
+            text1: [
+                "Langton's Ant is a fascinating example of how simple rules can lead to complex behaviors. In this project, you'll control an 'ant' that moves on a grid based on the colors of the cells it visits. The ant turns right on white cells and left on black cells, flipping the color of the cell after each move. Over time, this leads to emergent patterns that are both intriguing and beautiful, showcasing the principles of cellular automata and complexity theory."
+            ],
+            text2: [
+                'Developed with modern web technologies, Langton\'s Ant features interactive controls that allow users to start, pause, and reset the simulation. Customize the grid size, color scheme, and speed of the ant to explore the behavior of this unique cellular automaton. The visualizations provide insights into how simple rules can create unexpected complexity, making it a perfect blend of art and science.'
+            ],
+            project: [
+                {
+                    image: '/images/langtons-ant/main.png',
+                    title: 'Langton\'s Ant Simulation',
+                    description: 'Watch as the ant moves through the grid, creating complex patterns. The simulation offers real-time feedback, allowing you to see the immediate effects of the ant\'s movements and decisions on the grid.'
+                },
+                {
+                    image: '/images/langtons-ant/settings.png',
+                    title: 'Simulation Settings',
+                    description: 'Customize the grid size, color scheme, and speed of the ant to tailor the simulation to your preferences. Explore how these changes affect the ant\'s behavior and the resulting patterns.'
+                },
+                {
+                    image: '/images/langtons-ant/grid.png',
+                    title: 'Grid Interface',
+                    description: 'The user-friendly grid interface allows for easy navigation and control of the simulation. Click to reset the grid or start the ant\'s journey, observing how it interacts with its environment.'
+                },
+                {
+                    image: '/images/langtons-ant/ant.png',
+                    title: 'The Ant in Action',
+                    description: 'A close-up view of the ant as it navigates the grid, highlighting the rules it follows and the patterns it creates. This visualization illustrates the beauty of emergent behavior in cellular automata.'
+                }
+            ],
+            color: 'cyan-500',
+            rgbColor: 'rgb(6, 182, 212)',
+            link: 'https://github.com/Jackop05/Langtons-Ant',
+        },
+        {
+            param: 'gauss-matrix-solver',
+            name: 'Gauss Matrix Solver',
+            upperTitle: 'Solve linear equations with ease',
+            text1: [
+                "The Gauss Matrix Solver is a powerful tool designed for solving systems of linear equations using Gaussian elimination. Whether you're a student learning linear algebra or an engineer needing quick solutions, this application simplifies the process of solving matrices. Input your matrix coefficients and constants, and the solver will provide the solution in real-time."
+            ],
+            text2: [
+                'Built with user experience in mind, the Gauss Matrix Solver features a clean and intuitive interface. You can input your equations, visualize the steps of the Gaussian elimination process, and obtain the solutions easily. This project serves as an excellent resource for understanding linear algebra concepts and enhancing problem-solving skills.'
+            ],
+            project: [
+                {
+                    image: '/images/gauss-matrix-solver/input.png',
+                    title: 'Input Matrix Interface',
+                    description: 'Easily input your matrix and constants into the solver using the intuitive interface. The layout is designed for quick entry, minimizing the time it takes to set up your equations.'
+                },
+                {
+                    image: '/images/gauss-matrix-solver/steps.png',
+                    title: 'Step-by-Step Solution',
+                    description: 'View the detailed steps of the Gaussian elimination process as the solver works through your equations. This feature helps you understand each step and reinforces learning by providing context to the solution.'
+                },
+                {
+                    image: '/images/gauss-matrix-solver/results.png',
+                    title: 'Final Results',
+                    description: 'Obtain the final solutions to your equations with clarity. The results are displayed prominently, making it easy to see the values for your variables without any confusion.'
+                },
+                {
+                    image: '/images/gauss-matrix-solver/history.png',
+                    title: 'History of Calculations',
+                    description: 'Keep track of your previous calculations with a history feature. This allows you to revisit past problems and solutions, making it a valuable tool for learning and reference.'
+                }
+            ],
+            color: 'yellow-600',
+            rgbColor: 'rgb(253, 230, 0)',
+            link: 'https://github.com/Jackop05/Gauss-Matrix-Solver',
+        },
+    ],
 };
 
 export default singleProjectData;
