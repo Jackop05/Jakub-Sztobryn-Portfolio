@@ -83,21 +83,19 @@ const TechnologiesAndProjects = () => {
                     </div>
                 </div>
 
-                <div className='flex justify-start gap-8 mb-32'>
+                <div className='flex justify-start gap-8 mb-24'>
                     <div ref={(el) => (scaleRefs.current[0] = el)} data-index="0" className='opacity-0 w-[100px] flex flex-col justify-center'  onClick={() => {setIndexCurrentTechnology(0)}}>
                         <div className={`mx-auto mb-2 rounded-full w-[80px] h-[80px] border-4 border-solid border-neon-blue bg-white flex flex-col justify-center cursor-pointer hover:scale-110 hover:shadow-xl transition-all duration-[300ms] ${(indexCurrentTechnology == 0) && selectedClass}`}>
                             <img src={'/images/JS.png'} alt="JS icon" className='rounded-full h-[60px] mx-auto' />
                         </div>
                         <div className='text-center text-xl'>JavaScript</div>
                     </div>
-                    {/*             !!!!!!   STILL IN PROGRESS   !!!!!
                     <div ref={(el) => (scaleRefs.current[1] = el)} data-index="1" className='opacity-0 w-[100px] flex flex-col justify-center' onClick={() => {setIndexCurrentTechnology(1)}}>
                         <div className={`mx-auto mb-2 rounded-full w-[80px] h-[80px] border-4 border-solid border-neon-blue bg-white flex flex-col justify-center cursor-pointer hover:scale-110 hover:shadow-xl transition-all duration-[300ms] ${(indexCurrentTechnology == 1) && selectedClass}`}>
                             <img src={'/images/Java.png'} alt="JAVA icon" className='rounded-full h-[60px] w-[100px] mx-auto' />
                         </div>
                         <div className='text-center text-xl'>Java</div>
                     </div>
-                    */}
                     <div ref={(el) => (scaleRefs.current[2] = el)} data-index="2" className='opacity-0 w-[100px] flex flex-col justify-center' onClick={() => {setIndexCurrentTechnology(2)}}>
                         <div className={`mx-auto mb-2 rounded-full w-[80px] h-[80px] border-4 border-solid border-neon-blue bg-white flex flex-col justify-center cursor-pointer hover:scale-110 hover:shadow-xl transition-all duration-[300ms] ${(indexCurrentTechnology == 2) && selectedClass}`}>
                             <img src={'/images/C.png'} alt="C icon" className='rounded-full h-[60px] mx-auto' />

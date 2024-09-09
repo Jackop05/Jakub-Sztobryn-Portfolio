@@ -7,6 +7,7 @@ const gsapSkills = (slideRefs, scaleRefs) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 const index = entry.target.dataset.index;
+                console.log(index)
         
                 gsap.fromTo(
                     slideRefs.current[index], 
