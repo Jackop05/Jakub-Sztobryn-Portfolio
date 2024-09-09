@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom';
 const TechnologiesAndProjects = () => {
     const iconsArray = [
         [<FaSchool/>, <FaShoppingCart />, <FaPen />, <FaPuzzlePiece />, < FaUtensils/>, < FaHatCowboy/>, <FaApple />, <FaSun />], 
-        [],  
+        [<FaPuzzlePiece />, <FaSun />],  
         [<FaPuzzlePiece />, <AiFillBug />, <FaCalculator />]
     ];
 

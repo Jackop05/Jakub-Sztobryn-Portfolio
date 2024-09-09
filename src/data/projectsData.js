@@ -65,6 +65,24 @@ const projectData = {
             link: '/project/javascript/weather-app',
         },
     ],
+    'java': [
+        {
+            iconIndex: 0,
+            name: "Java Maze Solver",
+            technologies: ["Java", "Breadth-First Search (BFS) algorithm", "Swing", "Creating files"],
+            description: "A Java-based application that solves mazes using the BFS algorithm.",
+            image: "/images/labyrinthJava-app-preview.png",
+            link: "/project/java/java-maze-solver"
+        },
+        {
+            iconIndex: 1,
+            name: "Java Weather App",
+            technologies: ["Java", "Fetching data", "Swing"],
+            description: "This Java Weather App fetches real-time weather data from an external API and displays it.",
+            image: "/images/weatherJava-app-preview.png",
+            link: "/project/java/java-weather-app"
+        },        
+    ],
     'c': [
         {
             iconIndex: 0,
