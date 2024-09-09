@@ -5,8 +5,8 @@ import singleProjectData from '../data/singleProjectData';
 import { useNavigate } from 'react-router-dom';
 
 const PortfolioWebsite = () => {
-  const { param } = useParams(); 
-  const project = singleProjectData['javascript']?.find(p => p.param.toLowerCase() === param.toLowerCase());
+  const { technology, param } = useParams(); 
+  const project = singleProjectData[technology]?.find(p => p.param.toLowerCase() === param.toLowerCase());
   const navigate = useNavigate();
 
   if (!project) {

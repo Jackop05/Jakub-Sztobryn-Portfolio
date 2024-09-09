@@ -16,27 +16,27 @@ const singleProjectData = {
             ],
             project: [
                 {
-                    image: '../public/images/allegro/main.png',
+                    image: '/images/allegro/main.png',
                     title: 'Allegro clone',
                     description: 'The Allegro Clone project is a fully functional e-commerce platform developed using React for the frontend, Node.js and Express for the backend, and MongoDB as the database. It features user authentication, product management, and a shopping cart system',
                 },
                 {
-                    image: '../public/images/allegro/login.png',
+                    image: '/images/allegro/login.png',
                     title: 'Allegro clone',
                     description: 'The Allegro Clone project is a fully functional e-commerce platform developed using React for the frontend, Node.js and Express for the backend, and MongoDB as the database. It features user authentication, product management, and a shopping cart system',
                 },
                 {
-                    image: '../public/images/allegro/cart.png',
+                    image: '/images/allegro/cart.png',
                     title: 'Allegro clone',
                     description: 'The Allegro Clone project is a fully functional e-commerce platform developed using React for the frontend, Node.js and Express for the backend, and MongoDB as the database. It features user authentication, product management, and a shopping cart system',
                 },
                 {
-                    image: '../public/images/allegro/liked.png',
+                    image: '/images/allegro/liked.png',
                     title: 'Allegro clone',
                     description: 'The Allegro Clone project is a fully functional e-commerce platform developed using React for the frontend, Node.js and Express for the backend, and MongoDB as the database. It features user authentication, product management, and a shopping cart system',
                 },
                 {
-                    image: '../public/images/allegro/item.png',
+                    image: '/images/allegro/item.png',
                     title: 'Allegro clone',
                     description: 'The Allegro Clone project is a fully functional e-commerce platform developed using React for the frontend, Node.js and Express for the backend, and MongoDB as the database. It features user authentication, product management, and a shopping cart system',
                 },
@@ -290,7 +290,7 @@ const singleProjectData = {
     ],
     'c': [
         {
-            param: 'cmaze-solver',
+            param: 'c-maze-solver',
             name: 'C Maze Solver',
             upperTitle: 'Solve mazes efficiently using C',
             text1: [
