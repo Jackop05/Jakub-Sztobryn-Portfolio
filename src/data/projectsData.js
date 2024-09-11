@@ -81,7 +81,15 @@ const projectData = {
             description: "This Java Weather App fetches real-time weather data from an external API and displays it.",
             image: "/images/weatherJava-app-preview.png",
             link: "/project/java/java-weather-app"
-        },        
+        },     
+        {
+            iconIndex: 2,
+            name: "New project",
+            technologies: ["Java", "Rest API", "Spring", "Swing", "MySQL"],
+            description: "New project 'Bank App' is being developed right now...",
+            image: "/images/bank-app-preview.png",
+            link: "/"
+        },    
     ],
     'c': [
         {
