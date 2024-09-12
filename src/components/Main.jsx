@@ -18,10 +18,7 @@ const Main = () => {
           complex <span className='text-neon-blue drop-shadow-sm'>software</span>, 
           and work with <span className='text-neon-blue drop-shadow-sm'>databases</span>.
         </div>
-        <div className='text-lg sm:text-2xl mt-4'>And I keep learning every day</div>
-      </div>
-      <div className='flex justify-center lg:justify-start items-center bg-gray-500 w-[110px] h-[150px] sm:w-[180px] sm:h-[250px] lg:w-[220px] lg:h-[300px] rounded-[20px] overflow-hidden'>
-        <img src="/images/profile.jpg" alt="my-image" className='w-full h-full object-cover' />
+        <div className='text-lg sm:text-2xl mt-4'>And I keep learning every day.</div>
       </div>
     </div>
   );
