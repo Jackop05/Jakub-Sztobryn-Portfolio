@@ -3,26 +3,10 @@ const projectData = {
         {
             iconIndex: 0,
             name: 'Korepetycje Online',
-            technologies: ['React.js', 'Node.js', 'MongoDB', 'Tailwind'],
+            technologies: ['React.js', 'Node.js', 'MongoDB', 'Tailwind', 'Express'],
             description: 'Website where you can learn math and physics with amazing teachers!',
             image: '/images/korepetycjeOnline-app-preview.png',
             link: '/project/javascript/korepetycje-online',
-        },
-        {
-            iconIndex: 1,
-            name: 'Allegro clone',
-            technologies: ['Vite.js', 'Node.js', 'MongoDB', 'Tailwind'],
-            description: 'Allegro is a website where you can buy everything and I have built a version of it myself',
-            image: '/images/allegro-app-preview.png',
-            link: '/project/javascript/allegro-clone',
-        },
-        {
-            iconIndex: 2,
-            name: 'Messenger clone',
-            technologies: ['Vite.js', 'Node.js', 'MongoDB', 'Tailwind'],
-            description: 'Messenger is one of the most popular chat apps in the world, and I have coded it myself',
-            image: '/images/messenger-app-preview.png',
-            link: '/project/javascript/messenger-clone',
         },
         {
             iconIndex: 3,
@@ -33,12 +17,28 @@ const projectData = {
             link: '/project/javascript/maze-game',
         },
         {
+            iconIndex: 2,
+            name: 'Messenger clone',
+            technologies: ['Vite.js', 'Node.js', 'MongoDB', 'Tailwind', 'Express'],
+            description: 'Messenger is one of the most popular chat apps in the world, and I have coded it myself',
+            image: '/images/messenger-app-preview.png',
+            link: '/project/javascript/messenger-clone',
+        },
+        {
             iconIndex: 4,
             name: 'Recipe app',
             technologies: ['React.js', 'Tailwind', 'API calls'],
             description: 'Find your favorite recipes using an easy-to-navigate interface.',
             image: '/images/recipe-app-preview.png',
             link: '/project/javascript/recipe-app',
+        },
+        {
+            iconIndex: 1,
+            name: 'Allegro clone',
+            technologies: ['Vite.js', 'Node.js', 'MongoDB', 'Tailwind', 'Express'],
+            description: 'Allegro is a website where you can buy everything and I have built a version of it myself',
+            image: '/images/allegro-app-preview.png',
+            link: '/project/javascript/allegro-clone',
         },
         {
             iconIndex: 5,
@@ -85,7 +85,7 @@ const projectData = {
         {
             iconIndex: 2,
             name: "New project",
-            technologies: ["Java", "Rest API", "Spring", "Swing", "MySQL"],
+            technologies: ["Java", "Spring", "Swing", "PostgreSQL", "Maven"],
             description: "New project 'Bank App' is being developed right now...",
             image: "/images/bank-app-preview.png",
             link: "/"
