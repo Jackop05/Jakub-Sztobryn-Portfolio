@@ -318,7 +318,7 @@ const singleProjectData = {
             ],
             "color": "purple-500",
             "rgbColor": "rgb(139, 92, 246)",
-            "link": "https://github.com/your-repo/java-maze-solver"
+            "link": "https://github.com/Jackop05/Maze-java"
         },
         {
             "param": "java-weather-app",
@@ -349,7 +349,7 @@ const singleProjectData = {
             ],
             "color": "cyan-500",
             "rgbColor": "rgb(6, 182, 212)",
-            "link": "https://github.com/your-repo/java-weather-app"
+            "link": "https://github.com/Jackop05/weather-app-java"
         },        
     ],    
     'c': [
