@@ -21,7 +21,7 @@ const skillsData = [
     },
     {
         name: 'Databases',
-        definition: 'I have experience working with both SQL (MySQL, PostgreSQL) and NoSQL (MongoDB), focusing on efficient schema design, query optimization, and data integrity. My skills in databases management are shown by many e-commerce platforms recreations.'
+        definition: 'I have experience working with both SQL (MySQL, PostgreSQL) and NoSQL (MongoDB), focusing on efficient schema design, query optimization, and data integrity. My skills in databases management are shown by many e-commerce platform recreations.'
     }
 ];
 
