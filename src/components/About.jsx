@@ -37,7 +37,7 @@ const About = () => {
               ref={(el) => (rightElementsRef.current[0] = el)} 
               data-index="0"
             >
-              I am 19 years old and currently study at <span className='text-neon-blue drop-shadow-sm'>Warsaw University of Technology</span>.
+              I am 19 years old and currently studying at <span className='text-neon-blue drop-shadow-sm'>Warsaw University of Technology</span>.
               My dream is to be a part of a self-leading software team someday.
             </div>
             <div 
@@ -54,8 +54,8 @@ const About = () => {
               ref={(el) => (rightElementsRef.current[2] = el)} 
               data-index="2"
             >
-              My skills in <span className='text-neon-blue drop-shadow-sm'>JavaScript</span>, both Front-end and Back-end,
-              I have learned through <span className='text-neon-blue drop-shadow-sm'>3 years</span> of coding with many tutorials on
+              Skills in <span className='text-neon-blue drop-shadow-sm'>JavaScript</span>, both Front-end and Back-end,
+              I have learned through <span className='text-neon-blue drop-shadow-sm'>2 years</span> of coding with many tutorials on
               Udemy, YouTube, and self-made projects.
             </div>
           </div>
