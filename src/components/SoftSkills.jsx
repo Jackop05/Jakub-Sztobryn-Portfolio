@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import gsapSoftskills from '../GSAPanimation/gsapSoftskills';
 import { gsap } from 'gsap';
 import skillsData from '../data/skillsData';
@@ -36,9 +37,9 @@ const SoftSkills = () => {
           I believe every programmer should be able to work in a team.
         </div>
         <div className="text-lg sm:text-xl mb-16 right-text text-center" ref={(el) => (rightTextRefs.current[1] = el)}>
-          Whether it comes to knowing how to divide work between people, 
-          how to commit code without destroying others' work, 
-          speaking fluently, or understanding project management fundamentals.
+          Whether it's the ability to divide work between people, 
+          how to commit code without destroying others work, 
+          speaking English fluently or understanding the basics of project management.
         </div>
 
         <div className="flex flex-col md:flex-row gap-6 border-y-2 border-y-neon-blue p-4 md:p-8 rounded-xl">
@@ -58,8 +59,11 @@ const SoftSkills = () => {
           </div>
 
           <div className="border-l-2 border-l-neon-blue pl-4 md:pl-6 flex flex-col w-full md:w-[60%] text-xl right-item" ref={rightDefinitionRef}>
-            <div className="text-2xl sm:text-3xl text-neon-green drop-shadow-sm mb-4 text-center">{selectedSkill.name}</div>
-            <div className="text-base sm:text-lg text-gray-200">{selectedSkill.definition}</div>
+            <div className="text-2xl sm:text-3xl text-neon-green drop-shadow-sm mb-4 text-left">{selectedSkill.name}</div>
+            <div className="text-base sm:text-lg text-gray-200">
+              {selectedSkill.definition}
+              {selectedSkill.name == "Git" && <span className='text-neon-blue drop-shadow-sm'><Link to="https://github.com/Jackop05" target="_blank">My Github</Link></span>}
+            </div>
           </div>
         </div>
       </div>

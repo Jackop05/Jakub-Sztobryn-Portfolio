@@ -79,7 +79,7 @@ const TechnologiesAndProjects = () => {
                         and programs that <span className='text-neon-blue drop-shadow-sm'>uses algorithms</span> to give amazing effects. 
                     </div>
                     <div ref={(el) => (slideRefs.current[1] = el)} data-index="1" className='opacity-0 text-2xl mb-8'>
-                        Choose technology and see the projects down below
+                        Choose technology and see the projects down below:
                     </div>
                 </div>
 
