@@ -17,11 +17,11 @@ const skillsData = [
     },
     {
       name: 'Azure DevOps',
-      definition: 'Azure DevOps provides developer services to support teams to plan work, collaborate on code development, and build and deploy applications. I use it to manage CI/CD pipelines and track project progress.',
+      definition: 'Azure DevOps provides developer services to support teams workplan and enables easier code development. I have experienced working on Pull&Request, Wiki, Backog Items and so on. ',
     },
     {
         name: 'Databases',
-        definition: 'Databases are essential to data structures'
+        definition: 'I have experience working with both SQL (MySQL, PostgreSQL) and NoSQL (MongoDB), focusing on efficient schema design, query optimization, and data integrity. My skills in databases management are shown by many e-commerce platforms recreations.'
     }
 ];
 
