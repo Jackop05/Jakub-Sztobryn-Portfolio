@@ -2,43 +2,43 @@ const singleProjectData = {
     'javascript': [
         {
             param: 'allegro-clone',
-            name: 'Allegro-clone',
-            upperTitle: 'Allegro clone is real world project',
+            name: 'Allegro Clone',
+            upperTitle: 'Allegro Clone is a Real-World Project',
             text1: [
-                'Allegro clone is a clone of a famous website Allegro',
-                'It is designed to let user quickly and easily buy whatever he wants',
-                'Adding items to cart, changing amount of the items right before buying, searching items within certain category, searching with words, checking amount of items in the stock',
-                'All those features are here in allegro clone'
+                'Allegro Clone replicates the well-known Allegro website.',
+                'Designed for users to swiftly and effortlessly purchase items.',
+                'Features include adding items to the cart, adjusting quantities before purchase, searching within specific categories, keyword-based searches, and checking stock availability.',
+                'All these functionalities are integrated into Allegro Clone.'
             ],
             text2: [
-                'I used technologies common in web development',
-                'MongoDB with mongoose for database access, Tailwind for styling the content, Vite with React.js to provide client-side rendering, Node.js for server-side rendering, encrypting passwords for safety with bcrypt and many more...',
+                'Utilizes standard web development technologies.',
+                'Incorporates MongoDB with Mongoose for database management, Tailwind for styling, Vite with React.js for client-side rendering, Node.js for server-side operations, bcrypt for password encryption, and more...'
             ],
             project: [
                 {
                     image: '/images/allegro/main.png',
-                    title: 'Allegro clone',
-                    description: 'The Allegro Clone project is a fully functional e-commerce platform developed using React for the frontend, Node.js and Express for the backend, and MongoDB as the database. It features user authentication, product management, and a shopping cart system',
+                    title: 'Allegro Clone',
+                    description: 'The main page of Allegro Clone features a fully responsive and user-friendly interface, built with React, offering smooth navigation through various product categories.'
                 },
                 {
                     image: '/images/allegro/login.png',
-                    title: 'Allegro clone',
-                    description: 'The Allegro Clone project is a fully functional e-commerce platform developed using React for the frontend, Node.js and Express for the backend, and MongoDB as the database. It features user authentication, product management, and a shopping cart system',
+                    title: 'Allegro Clone',
+                    description: 'The login page ensures secure user authentication with JWT tokens and bcrypt for password hashing, allowing users to create accounts and log in safely.'
                 },
                 {
                     image: '/images/allegro/cart.png',
-                    title: 'Allegro clone',
-                    description: 'The Allegro Clone project is a fully functional e-commerce platform developed using React for the frontend, Node.js and Express for the backend, and MongoDB as the database. It features user authentication, product management, and a shopping cart system',
+                    title: 'Allegro Clone',
+                    description: 'The shopping cart system allows users to add and manage products with real-time updates to the cart\'s total value, demonstrating efficient state management in React.'
                 },
                 {
                     image: '/images/allegro/liked.png',
-                    title: 'Allegro clone',
-                    description: 'The Allegro Clone project is a fully functional e-commerce platform developed using React for the frontend, Node.js and Express for the backend, and MongoDB as the database. It features user authentication, product management, and a shopping cart system',
+                    title: 'Allegro Clone',
+                    description: 'The liked items feature lets users mark their favorite products, storing this data in the MongoDB database and displaying it in a personalized favorites section.'
                 },
                 {
                     image: '/images/allegro/item.png',
-                    title: 'Allegro clone',
-                    description: 'The Allegro Clone project is a fully functional e-commerce platform developed using React for the frontend, Node.js and Express for the backend, and MongoDB as the database. It features user authentication, product management, and a shopping cart system',
+                    title: 'Allegro Clone',
+                    description: 'The individual item page presents detailed product information, including image, descriptions, pricing, enhancing the user\'s shopping experience with dynamic content loading.'
                 },
             ],
             color: 'orange-600', 
@@ -46,112 +46,116 @@ const singleProjectData = {
             link: 'https://github.com/Jackop05/Allegro-clone',
         },
         {
-            "param": "korepetycje-online",
-            "name": "Korepetycje Online",
-            "upperTitle": "Learn math and physics online with expert tutors",
-            "text1": [
-                "Korepetycje Online is a comprehensive educational platform designed for students who want to improve their knowledge in math and physics. Whether you're preparing for exams, struggling with homework, or aiming to boost your grades, our platform connects you with experienced tutors who can help you succeed."
+            param: 'korepetycje-online',
+            name: 'Korepetycje Online',
+            upperTitle: 'Learn Math and Physics Online with Expert Tutors',
+            text1: [
+                'Korepetycje Online is a comprehensive educational platform for students seeking improvement in math and physics.',
+                'Whether preparing for exams, tackling homework, or enhancing grades, the platform connects students with experienced tutors for success.'
             ],
-            "text2": [
-                "Built using modern web technologies such as React, Node.js, and Tailwind CSS, Korepetycje Online delivers a smooth and engaging learning experience. Students can book lessons, manage their schedules, and interact with tutors in real time, all through a user-friendly interface designed to make online learning easy and effective."
+            text2: [
+                'Developed with modern web technologies like React, Node.js, and Tailwind CSS, Korepetycje Online offers a smooth and engaging learning experience.', 
+                'Students can book lessons, manage schedules, and interact with tutors in real time through a user-friendly interface.'
             ],
-            "project": [
+            project: [
                 {
-                    "image": "/images/korepetycje/main.png",
-                    "title": "Main Dashboard",
-                    "description": "The main dashboard serves as the hub for students, offering easy access to available courses, personal schedules, and tutor profiles. With a clean and intuitive layout, students can quickly find and book the lessons they need."
+                    image: '/images/korepetycje/main.png',
+                    title: 'Main Dashboard',
+                    description: 'The main dashboard provides students with easy access to courses, schedules, and contact info, featuring a clean and intuitive layout for quick lesson booking.'
                 },
                 {
-                    "image": "/images/korepetycje/lesson.png",
-                    "title": "Lesson Booking Page",
-                    "description": "The lesson booking page allows students to browse through different subjects, view tutor availability, and book lessons at convenient times. Each lesson is tailored to meet the student's academic needs, ensuring effective learning."
+                    image: '/images/korepetycje/lesson.png',
+                    title: 'Lesson Booking Page',
+                    description: 'Browse subjects, view tutor availability, and book lessons at convenient times. It takes only few clicks for user and the data is send to the database.',
                 },
                 {
-                    "image": "/images/korepetycje/myLessons.png",
-                    "title": "My Lessons Page",
-                    "description": "On the My Lessons page, students can manage all of their upcoming and past lessons. This section provides details on lesson timing, subjects, and tutor information, making it easy to stay organized and on track with their learning goals."
+                    image: '/images/korepetycje/myLessons.png',
+                    title: 'My Lessons Page',
+                    description: 'Manage upcoming and past lessons with details on timing, subjects, each course has all the information user needs and provide a link to the meeting. '
                 },
                 {
-                    "image": "/images/korepetycje/register.png",
-                    "title": "Registration Page",
-                    "description": "The registration page is designed with simplicity and security in mind, allowing new users to quickly create an account and start booking lessons. Users can sign up using their email or social media accounts, making the process hassle-free."
+                    image: '/images/korepetycje/register.png',
+                    title: 'Registration Page',
+                    description: 'Designed for simplicity and security, allowing new users to create accounts and book lessons quickly. Icons and text are designed to make navigating through website hassle-free experience.'
                 }
             ],
-            "color": "green-500",
-            "rgbColor": "rgb(34, 197, 94)", 
-            "link": "https://github.com/Jackop05/Korepetycje-Online"
-        },    
+            color: 'green-500',
+            rgbColor: 'rgb(34, 197, 94)', 
+            link: 'https://github.com/Jackop05/Korepetycje-Online'
+        },
         {
             param: 'messenger-clone',
             name: 'Messenger Clone',
-            upperTitle: 'Chat with your friends seamlessly',
+            upperTitle: 'Chat with Your Friends Seamlessly',
             text1: [
-            'Messenger is one of the most popular chat apps in the world.',
-            'It allows users to stay connected through messages, photos, and even video calls.',
-            'Our clone replicates the core functionality while introducing new features to enhance the overall chat experience.'
+                'Messenger is a widely used chat application.',
+                'It allows users to stay connected through messages, photos, and video calls.',
+                'My clone replicates core functionalities while introducing new features to enhance the chat experience.'
             ],
             text2: [
-            'Developed using modern frameworks to provide a smooth user experience.',
-            'Built with scalability and security in mind, this clone demonstrates the potential of current web technologies.',
-            'Optimized for both mobile and desktop platforms, ensuring seamless communication across devices.'
+                'Developed with modern frameworks for a smooth user experience.',
+                'Designed with scalability and security in mind, showcasing the potential of current web technologies.',
+                'Optimized for both mobile and desktop platforms, ensuring seamless communication across devices.'
             ],
             project: [
-            {
-                image: '/images/messenger/chats.png',
-                title: 'Chats Overview',
-                description: 'View and manage your recent conversations with friends in an intuitive chat interface. The design is clean and focused on providing quick access to active chats and chat history.'
-            },
-            {
-                image: '/images/messenger/login.png',
-                title: 'Login Screen',
-                description: 'Secure and simple login process to start chatting in no time. Users can log in using their credentials or sign up with a new account, complete with password recovery options.'
-            },
-            {
-                image: '/images/messenger/settingsChat.png',
-                title: 'Chat Settings',
-                description: 'Customize your chat settings for a more personalized experience. Adjust notifications, enable dark mode, configure privacy options, and manage blocked users, all from a single, easy-to-use settings menu.'
-            },
-            {
-                image: '/images/messenger/chat.png',
-                title: 'Chat Interface',
-                description: 'Engage in real-time conversations with rich text support, emojis, file sharing, and more. The user-friendly interface ensures a fluid chatting experience, whether you\'re typing messages or sending multimedia content.'
-            },
-            
+                {
+                    image: '/images/messenger/chats.png',
+                    title: 'Chats Overview',
+                    description: 'Manage recent conversations in an intuitive chat interface, offering quick access to active chats and new conversations.'
+                },
+                {
+                    image: '/images/messenger/login.png',
+                    title: 'Login Screen',
+                    description: 'Simple and secure login process with clear instructions, fast managing in database.'
+                },
+                {
+                    image: '/images/messenger/settingsChat.png',
+                    title: 'Chat Settings',
+                    description: 'Customize chat settings for a personalized experience. Set nickname, configure quick emoji, and see their profile on facebook.'
+                },
+                {
+                    image: '/images/messenger/chat.png',
+                    title: 'Chat Interface',
+                    description: 'Engage in real-time conversations with rich text support and emojis. The user-friendly interface ensures a fluid chatting in both two-people and group convarsations.'
+                },
             ],
             color: 'blue-500',
             rgbColor: 'rgb(59, 130, 246)',
             link: 'https://github.com/Jackop05/Messenger_clone',
-        },          
+        },
         {
             param: 'maze-game',
             name: 'Maze Game',
-            upperTitle: 'Find the shortest path to exit',
+            upperTitle: 'Find the Shortest Path to Exit',
             text1: [
-                "Maze Game is an interactive and engaging puzzle where players navigate through a grid-based labyrinth, aiming to find the shortest path to the exit using the Breadth-First Search (BFS) algorithm. Whether you're a fan of classic mazes or someone looking to challenge your problem-solving skills, this game offers a dynamic and visually stimulating experience. With customizable maze sizes, intuitive controls, and real-time feedback, Maze Game provides hours of entertainment while subtly introducing players to the fundamental concepts of graph traversal and pathfinding algorithms."
+                'Maze Game is an engaging puzzle where players set a labyrinth to find the shortest path using the Breadth-First Search (BFS) algorithm.',
+                'The game offers a dynamic experience with customizable maze sizes, intuitive controls like clicking or holding mouse to draw the labytrinth', 
+                'Introducing players to fundamental graph traversal and pathfinding concepts.'
             ],
             text2: [
-                'Dive into the world of mazes with the Maze Game, where the thrill of solving complex puzzles meets the elegance of modern web development. Built using React and other cutting-edge web technologies, the game offers smooth animations and a sleek design that enhances the user experience. The implementation of the BFS algorithm not only ensures that the pathfinding is accurate and efficient, but also provides an educational insight into one of the key algorithms used in computer science.'
+                'Experience mazes with Maze Game, blending puzzle-solving with modern web development.',
+                'Built with React and advanced web technologies, the game features smooth animation of solving the maze. The BFS algorithm ensures accurate and efficient pathfinding while providing educational insights into a key computer science algorithm.'
             ],
             project: [
                 {
                     image: '/images/maze-game/main.png',
                     title: 'Maze Game',
-                    description: 'An interactive game where you solve mazes using the BFS algorithm. Navigate through a grid, set your start and end points, and watch as the algorithm finds the shortest path to the exit. Customize the maze size and layout to create your unique challenges.',
+                    description: 'Solve mazes using the BFS algorithm. Create a grid, set start and end points, and see the algorithm find the shortest path. Customize maze size and layout for unique effect.'
                 },
                 {
                     image: '/images/maze-game/holdAndDraw.png',
                     title: 'Customizable Maze Creation',
-                    description: 'Easily create custom mazes by clicking or dragging to set walls. Define your own start and end points to personalize the challenge, making each game a unique experience. The intuitive controls ensure that creating complex mazes is both fun and easy.',
+                    description: 'Create custom mazes by clicking or dragging to set walls. Define start and end points to personalize the challenge. Intuitive controls make creating complex mazes fun and easy.'
                 },
                 {
                     image: '/images/maze-game/solved.png',
                     title: 'Algorithm in Action',
-                    description: 'Witness the BFS algorithm in action as it efficiently finds the shortest path through the maze. The real-time visualization of the algorithm’s process provides an educational experience, demonstrating how pathfinding works in a clear and engaging way.',
+                    description: 'Watch the BFS algorithm find the shortest path in real-time. The visualization of the algorithm\'s process offers an educational experience on pathfinding.'
                 },
                 {
                     image: '/images/maze-game/big.png',
                     title: 'Scalable Maze Sizes',
-                    description: 'Tackle mazes of varying sizes, from simple 5x5 grids to more complex 50x50 layouts. The game’s responsive design ensures that it remains accessible and enjoyable, regardless of the device or screen size you’re using.',
+                    description: 'See mazes of varying sizes, from simple 5x5 grids to complex 50x50 layouts. The responsive design ensures well rendered maze on any device or screen size.'
                 },
             ],
             color: 'purple-500',
@@ -159,132 +163,143 @@ const singleProjectData = {
             link: 'https://github.com/Jackop05/Maze-game'
         },
         {
-            "param": "recipe-app",
-            "name": "Recipe App",
-            "upperTitle": "Find your favorite recipes",
-            "text1": [
-                "Discover a vast collection of recipes from around the world with an intuitive and easy-to-navigate interface. Whether you're a seasoned chef or a beginner, our app makes it simple to find dishes that match your taste and skill level. Explore new cuisines and experiment with diverse ingredients to create your next culinary masterpiece."
+            param: 'recipe-app',
+            name: 'Recipe App',
+            upperTitle: 'Find Your Favorite Recipes',
+            text1: [
+                'Discover a vast collection of recipes.',
+                'Whether you\'re a seasoned chef or a beginner, our app simplifies finding dishes that suit your taste and skill level.', 
+                'Explore new cuisines and ingredients for your next culinary masterpiece.'
             ],
-            "text2": [
-                "Our application harnesses the power of API calls to aggregate a wide variety of recipes, ensuring that you have access to the freshest and most diverse options available. Each search delivers detailed instructions, ingredient lists, and beautiful images, making it easier than ever to decide what to cook next."
+            text2: [
+                'The app uses API calls to aggregate a wide variety of recipes, ensuring access to fresh and diverse options.', 
+                'Each search provides detailed instructions, ingredient lists, and images, making it easier to decide what to cook next.'
             ],
-            "project": [
+            project: [
                 {
-                    "image": "/images/recipe/main.png",
-                    "title": "Recipe App",
-                    "description": "A comprehensive and responsive web application designed to help users explore, search, and discover a wide range of recipes. The app features a user-friendly interface that simplifies the process of finding the perfect meal, whether you're looking for something quick or an elaborate feast."
+                    image: '/images/recipe/main.png',
+                    title: 'Recipe App',
+                    description: 'A responsive web application to explore, search, and discover recipes. Features a user-friendly interface that simplifies finding the perfect meal, whether quick or elaborate.'
                 },
                 {
-                    "image": "/images/recipe/chicken.png",
-                    "title": "Recipe Search",
-                    "description": "With the powerful search functionality, users can effortlessly find recipes based on specific ingredients or meal types. Simply enter an ingredient in the search bar, and the app will display a curated list of delicious recipes, each accompanied by detailed cooking instructions and ingredient lists."
+                    image: '/images/recipe/chicken.png',
+                    title: 'Recipe Search',
+                    description: 'Search recipes by ingredient or meal type. Enter an ingredient to see a curated list of recipes with detailed cooking instructions and ingredient lists.'
                 },
                 {
-                    "image": "/images/recipe/responsive.png",
-                    "title": "Responsive Design",
-                    "description": "The app is built with a responsive design, ensuring that it adapts beautifully to any screen size. Whether you're using a mobile phone, tablet, or desktop, the Recipe App offers a seamless and enjoyable browsing experience, making it easy to cook up something new anytime, anywhere."
+                    image: '/images/recipe/responsive.png',
+                    title: 'Responsive Design',
+                    description: 'Adapts beautifully to any screen size. Whether on a mobile phone, tablet, or desktop, the Recipe App ensures a seamless browsing experience for cooking up something new anytime.'
                 }
             ],
-            "color": "red-500",
-            "rgbColor": "rgb(239, 68, 68)",
+            color: 'red-500',
+            rgbColor: 'rgb(239, 68, 68)',
             link: 'https://github.com/Jackop05/Recipe-app',
-        },      
+        },
         {
             param: 'shirt-shop',
             name: '3D Shirts Shop',
-            upperTitle: 'Design and purchase custom shirts',
+            upperTitle: 'Design and Purchase Custom Shirts',
             text1: [
-                '3D Shirts Shop is an innovative platform that allows users to create and customize their own shirts in a fully interactive 3D environment. Users can select from a diverse range of colors, styles, and designs, ensuring that each shirt is a unique reflection of their personality and taste. The application is designed to be user-friendly, making it accessible for everyone, regardless of their technical background.'
+                '3D Shirts Shop is a platform that allows users to create and customize shirts in an interactive 3D environment.',
+                'Select from various colors, styles, and designs to ensure each shirt reflects your personality and taste.',
+                'Designed to be user-friendly for all levels of technical expertise.'
             ],
             text2: [
-                'This application leverages cutting-edge 3D modeling and modern web technologies to provide an immersive shopping experience that feels both dynamic and engaging. With realistic shirt previews that respond to user interactions, shoppers can see their designs come to life in real-time, adjusting colors and patterns with ease. The platform’s intuitive controls and sleek user interface guide users through the customization process, ensuring that even those unfamiliar with technology can navigate with confidence.'
+                'Leverages advanced 3D modeling and modern web technologies to provide an immersive shopping experience.',
+                'Realistic shirt previews respond to user interactions, with intuitive controls guiding the customization process for easy navigation, even for those unfamiliar with technology.'
             ],
             project: [
                 {
                     image: '/images/shirt-shop/main.png',
                     title: '3D Shirts Shop',
-                    description: 'A platform that allows users to customize shirts in 3D, offering a unique shopping experience.'
+                    description: 'A platform for customizing shirts in 3D, offering a unique and interactive shopping experience.'
                 },
                 {
                     image: '/images/shirt-shop/colors.png',
                     title: 'Color Selection',
-                    description: 'Choose from an extensive palette of colors to create the perfect shirt that matches your style and mood.'
+                    description: 'Choose from a wide palette of colors to design a shirt that matches your style and mood.'
                 },
                 {
                     image: '/images/shirt-shop/files.png',
                     title: 'Image Upload',
-                    description: 'Easily upload your own images or graphics to add a personal touch to your shirt design, making it truly one-of-a-kind.'
+                    description: 'Upload your own images or graphics to personalize your shirt design, making it truly unique.'
                 }
             ],
             color: 'yellow-500',
             rgbColor: 'rgb(234, 179, 8)', 
             link: 'https://github.com/Jackop05/Custom-shirts-shop',
-        },       
+        },
         {
             param: 'apple-clone',
             name: 'Apple Clone',
             upperTitle: 'Explore the Apple Experience',
             text1: [
-                "The Apple Clone is a meticulously crafted replica of the Apple website, designed to capture the essence of Apple's iconic aesthetic. This project showcases a blend of smooth animations and a sleek, modern design that mimics the original interface, allowing users to navigate effortlessly through various sections. With attention to detail, the clone features interactive elements that provide a polished and engaging experience, closely resembling the fluidity found in Apple's real applications."
+                'The Apple Clone is a meticulously crafted replica of the Apple website, designed to capture Apple\'s iconic aesthetic.',
+                'Showcases a blend of smooth animations and a modern design. Attention to detail creates an engaging and polished user experience, closely resembling Apple’s real applications.'
             ],
             text2: [
-                'Built using the latest web technologies, this Apple Clone ensures a seamless user experience across all devices. Leveraging frameworks like React and Vite, it achieves fast loading times and dynamic content rendering, which are crucial for maintaining user engagement. The project incorporates responsive design principles, making it visually appealing on both mobile and desktop platforms. Additionally, advanced CSS animations and transitions enhance the overall interactivity, allowing users to enjoy a vibrant and lively interface.'
+                'Built with the help of tutorial, using the latest web technologies to ensure a seamless experience across all devices.',
+                'Utilizes React and Vite for fast loading times and dynamic content rendering. Incorporates responsive design principles and advanced CSS animations to enhance interactivity.'
             ],
             project: [
                 {
                     image: '/images/apple/main.png',
                     title: 'Apple Clone Homepage',
-                    description: 'The main page showcases the overall layout and design, reflecting the aesthetic of Apple’s official site with a focus on clean lines and simplicity.',
+                    description: 'Displays the overall layout and design, reflecting Apple\'s aesthetic with clean lines and simplicity.'
                 },
                 {
                     image: '/images/apple/rotating.png',
                     title: 'Interactive 3D Model',
-                    description: 'An interactive 3D model feature that allows users to rotate and view products from different angles, enhancing the shopping experience.',
+                    description: 'Features an interactive 3D model allowing users to rotate and view products from different angles.'
                 },
                 {
                     image: '/images/apple/slick-design.png',
                     title: 'Sleek Design Elements',
-                    description: 'Highlights of the sleek design elements used throughout the site, emphasizing the use of modern typography and minimalistic visuals.',
+                    description: 'Highlights modern dark style design and big animations or videos used throughout the site.'
                 },
                 {
                     image: '/images/apple/responsive.png',
                     title: 'Responsive Design',
-                    description: 'A demonstration of the responsive capabilities, displaying how the site adapts beautifully to different screen sizes and orientations.',
+                    description: 'Demonstrates responsive capabilities, showing how the site adapts to various screen sizes and orientations.'
                 },
             ],
             color: 'gray-400',
             rgbColor: 'rgb(156, 163, 175)', 
             link: 'https://github.com/Jackop05/Apple_page_clone',
-        },    
+        },
         {
-            "param": "weather-app",
-            "name": "Weather App",
-            "upperTitle": "Get real-time weather updates",
-            "text1": [
-                "Weather App is a comprehensive tool that allows users to obtain real-time weather information for any location worldwide. With its clean and intuitive user interface, the app provides users with essential weather details such as temperature, wind speed, humidity, and atmospheric conditions. Whether you're planning your day or preparing for a trip, Weather App ensures that you have the latest and most accurate weather data at your fingertips."
+            param: 'weather-app',
+            name: 'Weather App',
+            upperTitle: 'Get Real-Time Weather Updates',
+            text1: [
+                'Weather App provides real-time weather information for any location worldwide.',
+                'Features a clean and intuitive interface with essential details like temperature, wind speed, humidity, and atmospheric conditions.', 
+                'Ideal for planning daily activities or preparing for trips, offering the latest and most accurate weather data.'
             ],
-            "text2": [
-                "The app integrates advanced API calls to retrieve weather data from various trusted sources, ensuring the reliability and accuracy of the information presented. By consolidating data from multiple inputs, the Weather App delivers a well-rounded overview of current and forecasted weather conditions. This makes it an indispensable tool for users who need timely weather updates to make informed decisions."
+            text2: [
+                'Integrates advanced API calls for reliable weather data from various trusted sources.',
+                'Consolidates information from multiple inputs for a comprehensive overview of current weather conditions, making it an essential tool for timely and informed weather updates.'
             ],
-            "project": [
+            project: [
                 {
-                    "image": "/images/weather-app/sunny.png",
-                    "title": "Live Weather Updates",
-                    "description": "The Weather App provides up-to-the-minute weather updates, giving users accurate information about current conditions and forecasts for the days ahead. Stay informed with real-time data to help you plan your daily activities and outdoor events."
+                    image: '/images/weather-app/sunny.png',
+                    title: 'Live Weather Updates',
+                    description: 'Provides up-to-the-minute weather updates, offering accurate information about current conditions and forecasts for the coming days. Stay informed for daily activities and outdoor events.'
                 },
                 {
-                    "image": "/images/weather-app/foggy.png",
-                    "title": "Dynamic Weather Conditions",
-                    "description": "The app features visually engaging and context-sensitive weather icons that change dynamically based on the current conditions. Whether it's sunny, foggy, rainy, or snowy, the app presents these conditions in a clear and appealing visual format."
+                    image: '/images/weather-app/foggy.png',
+                    title: 'Dynamic Weather Conditions',
+                    description: 'Features context-sensitive weather icons that change based on current conditions, such as sunny, foggy, rainy, or snowy, presented in a clear and visually engaging format.'
                 },
                 {
-                    "image": "/images/weather-app/responsive.png",
-                    "title": "Responsive Design",
-                    "description": "Designed with a responsive layout, the Weather App adapts seamlessly to various screen sizes, providing a consistent and user-friendly experience on smartphones, tablets, and desktops. The app ensures that users can easily access weather information regardless of the device they are using."
+                    image: '/images/weather-app/responsive.png',
+                    title: 'Responsive Design',
+                    description: 'Adapts seamlessly to various screen sizes, ensuring a consistent and user-friendly experience on smartphones, tablets, and desktops. Access weather information easily, regardless of the device.'
                 }
             ],
-            "color": "cyan-500",
-            "rgbColor": "rgb(6, 182, 212)",
+            color: 'cyan-500',
+            rgbColor: 'rgb(6, 182, 212)',
             link: 'https://github.com/Jackop05/Weather-app/tree/master',
         }   
     ],

@@ -55,7 +55,7 @@ const PortfolioWebsite = () => {
               <div className='flex flex-col lg:flex-row gap-8 sm:gap-20'>
                 <div className='w-full lg:w-[50%]'>
                   {project.text1.map((text, index) => (
-                    <div className={index === 1 ? 'mb-4' : ''} key={index} dangerouslySetInnerHTML={{ __html: text }} />
+                    <div className='mb-2' key={index} dangerouslySetInnerHTML={{ __html: text }} />
                   ))}
                 </div>
                 <div className="w-full lg:w-[50%]">
