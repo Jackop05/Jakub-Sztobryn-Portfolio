@@ -382,7 +382,7 @@ const singleProjectData = {
             ],
             "color": "red-500",
             "rgbColor": "rgb(239, 68, 68)",
-            "link": "https://github.com/Jackop05/CMazeSolver"
+            "link": "https://github.com/Jackop05/C-maze-solver"
         },
         {
             "param": "langtons-ant",
@@ -434,7 +434,7 @@ const singleProjectData = {
             ],
             "color": "yellow-600",
             "rgbColor": "rgb(253, 230, 0)",
-            "link": "https://github.com/Jackop05/Gauss-Matrix-Solver"
+            "link": "https://github.com/Jackop05/Gauss-matrix-calculator"
         }
     ],    
 };
