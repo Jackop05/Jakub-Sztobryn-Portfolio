@@ -398,8 +398,8 @@ const singleProjectData = {
                     "description": "A sample of the Java code implementing the backend logic for handling event creation and user sessions."
                 }
             ],
-            "color": "orange-600",
-            "rgbColor": "rgb(234, 88, 12)", 
+            "color": 'blue-500',
+            "rgbColor": 'rgb(59, 130, 246)',
             "link": "https://github.com/Jackop05/Events_App_Java"
         }
             
