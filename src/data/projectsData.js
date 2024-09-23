@@ -90,6 +90,14 @@ const projectData = {
             image: "/images/bank-app-preview.png",
             link: "/"
         },    
+        {
+            iconIndex: 3,
+            name: "Java Event App",
+            technologies: ["Java", "Spring Boot", "React", "Jwt"],
+            description: "Application with backend in Java and frontend in React",
+            image: "/images/EventJava-app-preview.png",
+            link: "/project/java/java-event-app"
+        },
     ],
     'c': [
         {

@@ -3,6 +3,7 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import { FaShoppingCart , FaSchool, FaPen, FaPuzzlePiece, FaSun, FaHatCowboy, FaUtensils, FaApple, FaCalculator, FaPiggyBank } from 'react-icons/fa';
 import { AiFillBug } from 'react-icons/ai';
+import { MdEventAvailable } from 'react-icons/md';
 import gsapSkills from '../GSAPanimation/gsapSkills';
 import projectsData from '../data/projectsData';
 import { Link } from 'react-router-dom';
@@ -14,7 +15,7 @@ import { Link } from 'react-router-dom';
 const TechnologiesAndProjects = () => {
     const iconsArray = [
         [<FaSchool/>, <FaShoppingCart />, <FaPen />, <FaPuzzlePiece />, < FaUtensils/>, < FaHatCowboy/>, <FaApple />, <FaSun />], 
-        [<FaPuzzlePiece />, <FaSun />, <FaPiggyBank />],  
+        [<FaPuzzlePiece />, <FaSun />, <FaPiggyBank />, <MdEventAvailable />],  
         [<FaPuzzlePiece />, <AiFillBug />, <FaCalculator />]
     ];
 

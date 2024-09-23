@@ -365,7 +365,44 @@ const singleProjectData = {
             "color": "cyan-500",
             "rgbColor": "rgb(6, 182, 212)",
             "link": "https://github.com/Jackop05/weather-app-java"
-        },        
+        },   
+        {
+            "param": "java-event-app",
+            "name": "Java Event App",
+            "upperTitle": "Event Management System in Java",
+            "text1": [
+                "This project is a Java-based event management system designed to handle event creation, user authentication, and management functionality. It helps users create, manage, and keep track of events with an easy-to-use interface."
+            ],
+            "text2": [
+                "The app includes features such as user registration, login, event creation, and real-time event tracking. It leverages Java’s core capabilities and demonstrates a well-structured MVC architecture."
+            ],
+            "project": [
+                {
+                    "image": "/images/event-app/main.png",
+                    "title": "Main Dashboard",
+                    "description": "The main dashboard offers an overview of upcoming events, giving users easy access to event management and quick navigation options."
+                },
+                {
+                    "image": "/images/event-app/login.png",
+                    "title": "User Login",
+                    "description": "A secure login page where users can authenticate using their credentials to access the system and manage events."
+                },
+                {
+                    "image": "/images/event-app/newEvent.png",
+                    "title": "Create New Event",
+                    "description": "The event creation page allows users to input event details such as date, time, and location, with options to set notifications."
+                },
+                {
+                    "image": "/images/event-app/javaCode.png",
+                    "title": "Java Code Sample",
+                    "description": "A sample of the Java code implementing the backend logic for handling event creation and user sessions."
+                }
+            ],
+            "color": "orange-600",
+            "rgbColor": "rgb(234, 88, 12)", 
+            "link": "https://github.com/Jackop05/Events_App_Java"
+        }
+            
     ],    
     'c': [
         {
