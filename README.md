@@ -1,4 +1,4 @@
-# 🏆 Jakub Sztobryn - Personal Portfolio Website
+# 🏆 Personal Portfolio Website - Jakub Sztobryn 
 
 Welcome to my personal website, [www.jakubsztobryn.pl](https://www.jakubsztobryn.pl/), where I showcase my work, skills, and personal projects. I'm Jakub Sztobryn, passionate about building websites, creating complex software, and working with databases.
 
