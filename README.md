@@ -1,8 +1,33 @@
-# React + Vite
+# Jakub Sztobryn - Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal website, [www.jakubsztobryn.pl](https://www.jakubsztobryn.pl/), where I showcase my work, skills, and personal projects. I'm Jakub Sztobryn, passionate about building websites, creating complex software, and working with databases.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I am a student at the **Warsaw University of Technology**, currently pursuing **Applied Computer Science**. I have experience in web development, software development, and database management. My portfolio includes recreations of famous websites, original applications, and algorithm-based programs. 
+
+## Features
+
+- **About Section**: Details about my academic journey, current studies, and skills.
+- **Projects Section**: A showcase of my projects, including recreations of famous websites and original software applications. Projects are categorized by technology, such as JavaScript, Java, and C.
+- **Skills Section**: An overview of the usefull skills I have learned like knowing git, azure DevOps, English level and more.
+- **Contact Form**: Visitors can get in touch with me directly via the contact form.
+
+## Installation
+
+If you want to run the website locally:
+
+1. **Clone the repository**:
+    ```bash
+    git clone https://www.jakubsztobryn.pl/
+    ```
+2. **Navigate to the project directory**:
+    ```bash
+    cd jakubsztobryn.pl
+    ```
+3. **Run the project**:
+    Open the `index.html` file in your browser to view the website.
+
+## Contact
+
+Feel free to contact me through the contact form on the website or via email: [kuba.sztobryn@gmail.com](mailto:kuba.sztobryn@gmail.com).
