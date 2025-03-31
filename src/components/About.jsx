@@ -1,67 +1,72 @@
-import React, { useEffect, useRef } from 'react';
-import gsapAbout from '../GSAPanimation/gsapAbout';
+import React from 'react';
+import { motion } from "framer-motion";
 
 const About = () => {
-  const questionsRef = useRef([]);
-  const rightElementsRef = useRef([]);
-
-  useEffect(() => {
-    gsapAbout(questionsRef, rightElementsRef);
-  }, []);
+  const qaPairs = [
+    {
+      question: "Who?",
+      answer: "I'm a 19-year-old student at Warsaw University of Technology with a passion for creating impactful software solutions. My goal is to join a dynamic development team where I can contribute my skills and continue growing."
+    },
+    {
+      question: "What about college?",
+      answer: "Currently in my second year of Applied Computer Science, I've mastered clean code in Java and C. This year, I'm expanding my expertise with C++ and C# through advanced coursework and personal projects."
+    },
+    {
+      question: "Best programming language?",
+      answer: "With 2 years of experience, I've developed strong skills in JavaScript across the full stack. Through countless hours of learning and personal projects, I've built everything from interactive UIs to robust backend systems."
+    }
+  ];
 
   return (
-    <div id="about" className='flex flex-col lg:flex-row justify-center lg:gap-[40px] gap-[20px] py-20 bg-dark text-light px-4'>
-      <div className='flex flex-col justify-between self-end h-auto lg:h-[300px] w-full lg:w-[30%] anton mb-12 lg:mb-0'>
-        <div 
-          className='opacity-0 relative text-[30px] lg:text-[40px] text-lighter-blue text-center lg:text-right question' 
-          ref={(el) => (questionsRef.current[0] = el)}
-          data-index="0"
-        >Who?</div>
-        <div 
-          className='opacity-0 relative text-[30px] lg:text-[40px] text-lighter-blue text-center lg:text-right question' 
-          ref={(el) => (questionsRef.current[1] = el)}
-          data-index="1"
-        >What about college?</div>
-        <div 
-          className='opacity-0 relative text-[30px] lg:text-[40px] text-lighter-blue text-center lg:text-right question' 
-          ref={(el) => (questionsRef.current[2] = el)}
-          data-index="2"
-        >Best programming language?</div>
-      </div>
-      <div className='flex flex-col justify-center w-full lg:w-[70%] anton self-start'>
-        <div className='w-full max-w-[750px] h-auto flex flex-col justify-center anton mx-auto lg:mx-0'>
-          <div className='text-[40px] lg:text-[80px] text-neon-green drop-shadow-sm m-0 mb-6 text-center lg:text-left'>About me</div>
-          <div className='h-auto lg:h-[300px] mb-4 lg:mb-0 flex flex-col justify-between m-0'>
-            <div 
-              className='opacity-0 text-lg lg:text-2xl mb-4' 
-              ref={(el) => (rightElementsRef.current[0] = el)} 
-              data-index="0"
-            >
-              I am 19 years old and currently studying at <span className='text-neon-blue drop-shadow-sm'>Warsaw University of Technology</span>.
-              My dream is to be a part of a self-leading software team someday.
-            </div>
-            <div 
-              className='opacity-0 text-lg lg:text-2xl mb-4' 
-              ref={(el) => (rightElementsRef.current[1] = el)} 
-              data-index="1"
-            >
-              I am attending the second year of <span className='text-neon-blue drop-shadow-sm'>Applied Computer Science</span>.
-              There I have learned how to write clear <span className='text-neon-blue drop-shadow-sm'>JAVA</span> and <span className='text-neon-blue drop-shadow-sm'>C</span> code.
-              This year I will be learning mostly <span className='text-neon-blue drop-shadow-sm'>C<span className='relative bottom-[2px]'>++</span></span> and <span className='text-neon-blue drop-shadow-sm'>C#</span>.
-            </div>
-            <div 
-              className='opacity-0 text-lg lg:text-2xl' 
-              ref={(el) => (rightElementsRef.current[2] = el)} 
-              data-index="2"
-            >
-              Skills in <span className='text-neon-blue drop-shadow-sm'>JavaScript</span>, both Front-end and Back-end,
-              I have learned through <span className='text-neon-blue drop-shadow-sm'>2 years</span> of coding with many tutorials on
-              Udemy, YouTube, and self-made projects.
-            </div>
+    <section id="about" className="py-20 bg-gray-800 text-white">
+      <div className="container mx-auto px-6 lg:px-12">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-4xl md:text-5xl lg:text-6xl font-bold mb-16 text-center"
+        >
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500">
+            About Me
+          </span>
+        </motion.h2>
+        
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          <div className="space-y-12">
+            {qaPairs.map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="text-3xl md:text-4xl font-bold text-blue-400"
+              >
+                {item.question}
+              </motion.div>
+            ))}
+          </div>
+          
+          <div className="space-y-12">
+            {qaPairs.map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="text-lg md:text-xl text-gray-300"
+              >
+                {item.answer.split('Warsaw University of Technology').map((text, i) => 
+                  i === 0 ? text : <span key={i} className="text-blue-400">Warsaw University of Technology</span>
+                )}
+              </motion.div>
+            ))}
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

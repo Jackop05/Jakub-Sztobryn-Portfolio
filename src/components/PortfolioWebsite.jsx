@@ -1,100 +1,221 @@
 import React from 'react';
 import { FaArrowLeft } from 'react-icons/fa';
 import { Link, useParams } from 'react-router-dom';
-import singleProjectData from '../data/singleProjectData'; 
+import { motion } from 'framer-motion';
+import singleProjectData from '../data/singleProjectData';
 import { useNavigate } from 'react-router-dom';
 
 const PortfolioWebsite = () => {
-  const { technology, param } = useParams(); 
+  const { technology, param } = useParams();
   const project = singleProjectData[technology]?.find(p => p.param.toLowerCase() === param.toLowerCase());
   const navigate = useNavigate();
 
   if (!project) {
     return (
-      <div className="text-white text-center mt-40">
-        <h1 className="text-4xl">Project not found</h1>
-        <Link to="/" className="text-blue-500 mt-4 inline-block">Go back to the homepage</Link>
+      <div className="flex items-center justify-center min-h-screen bg-gray-900 text-white">
+        <div className="text-center">
+          <h1 className="text-4xl font-bold mb-6">Project not found</h1>
+          <Link 
+            to="/" 
+            className="inline-block px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg hover:shadow-lg transition-all"
+          >
+            Back to Homepage
+          </Link>
+        </div>
       </div>
     );
   }
 
-  const color = project.color;
-  const rgbColor = project.rgbColor;
-
-  const redirectToHome = () => {
-    navigate('/');
-  };
+  const { color, rgbColor, name, upperTitle, text1, text2, link, project: projectItems } = project;
 
   return (
-    <div>
-      <div className='fixed w-screen flex justify-between backdrop-blur-sm px-4 sm:px-10 py-4 sm:py-8 z-50 text-white'>
-        <div className='anton text-[24px] sm:text-[30px] cursor-pointer drop-shadow-sm'>
+    <div className="bg-gray-900 text-white">
+      {/* Header */}
+      <motion.header 
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="fixed w-full flex justify-between items-center backdrop-blur-md bg-gray-900/80 px-6 py-4 z-50 border-b border-gray-800"
+      >
+        <div className="text-2xl font-bold cursor-pointer" onClick={() => navigate('/')}>
           Jakub <span style={{ color: rgbColor }}>Sztobryn</span>
         </div>
-        <div 
-          className={`rounded-full border-4 w-8 h-8 sm:w-10 sm:h-10 flex flex-col justify-center cursor-pointer hover:scale-125 hover:border-[3px] transition-all duration-[300ms]`}
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          className="rounded-full border-2 p-2 cursor-pointer"
           style={{ borderColor: rgbColor }}
+          onClick={() => navigate('/')}
         >
-          <Link to="/"><FaArrowLeft className='mx-auto text-xl sm:text-2xl' /></Link>
-        </div>
-      </div>
+          <FaArrowLeft className="text-xl" style={{ color: rgbColor }} />
+        </motion.div>
+      </motion.header>
 
-      <div className="relative w-screen h-[300px] sm:h-[500px] lg:h-[700px] anton">
-        <div className="triangle-bg absolute inset-0"></div>
-        <div className="empty-letter absolute bottom-10 sm:bottom-28 right-4 sm:right-16 font-bold text-5xl sm:text-6xl lg:text-8xl tracking-widest text-transparent" 
-             style={{ WebkitTextStroke: `1px ${rgbColor}` }}>
-          {project.name}
-        </div>
-      </div>
+      {/* Hero Section */}
+      <section className="relative h-[60vh] min-h-[400px] flex items-end pb-20">
+        <div className="absolute inset-0 bg-gradient-to-b from-gray-900 via-gray-900/80 to-gray-900 z-0" />
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/50 to-gray-900 z-0" />
+        
+        <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="absolute inset-0 z-0"
+          style={{ 
+            background: `linear-gradient(45deg, ${rgbColor}10 0%, transparent 100%)`
+          }}
+        />
 
-      <div className='bg-slate-800 text-white anton pt-20 sm:pt-40 px-4 sm:px-10 lg:px-60 text-lg sm:text-xl'>
-        <div className='flex flex-col'>
-          <div className='flex flex-col gap-12 sm:gap-24 mb-12 sm:mb-24'>
-            <div className=''>
-              <div className='text-3xl sm:text-4xl mb-6 sm:mb-10 w-full sm:w-[400px]'>{project.upperTitle}</div>
-              <div className='flex flex-col lg:flex-row gap-8 sm:gap-20'>
-                <div className='w-full lg:w-[50%]'>
-                  {project.text1.map((text, index) => (
-                    <div className='mb-2' key={index} dangerouslySetInnerHTML={{ __html: text }} />
-                  ))}
-                </div>
-                <div className="w-full lg:w-[50%]">
-                  {project.text2.map((text, index) => (
-                    <div key={index} className={index === 0 ? 'mb-4' : ''} dangerouslySetInnerHTML={{ __html: text }} />
-                  ))}
-                  <div className='flex flex-col'>
-                    <div className='relative mt-8 text-2xl sm:text-3xl'>
-                      See it for yourself now and <a href={project.link} target="_blank" rel="noopener noreferrer"><span style={{ color: rgbColor }} className="cursor-pointer">click here</span></a>!
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div className="container mx-auto px-6 relative z-10">
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-5xl sm:text-6xl md:text-7xl font-bold mb-4 text-transparent bg-clip-text"
+            style={{ backgroundImage: `linear-gradient(45deg, ${rgbColor}, #ffffff)` }}
+          >
+            {name}
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="text-xl sm:text-2xl max-w-2xl"
+          >
+            {upperTitle}
+          </motion.p>
+        </div>
+      </section>
+
+      {/* Project Details */}
+      <section className="py-20 bg-gray-800">
+        <div className="container mx-auto px-6 max-w-6xl">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20"
+          >
+            <div>
+              {text1.map((text, index) => (
+                <motion.p
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="mb-6 text-lg"
+                  dangerouslySetInnerHTML={{ __html: text }}
+                />
+              ))}
             </div>
-          </div>
+            <div>
+              {text2.map((text, index) => (
+                <motion.p
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className={`mb-6 text-lg ${index === 0 ? 'font-medium' : ''}`}
+                  dangerouslySetInnerHTML={{ __html: text }}
+                />
+              ))}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="mt-10"
+              >
+                <a 
+                  href={link} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-block px-8 py-3 rounded-lg font-medium transition-all"
+                  style={{ 
+                    background: rgbColor,
+                    color: 'white',
+                    boxShadow: `0 4px 20px ${rgbColor}40`
+                  }}
+                >
+                  View Live Project
+                </a>
+              </motion.div>
+            </div>
+          </motion.div>
 
-          <div className='p-4 sm:p-10'>
-            {project.project.map((item, index) => (
-              <div key={index} className={`flex flex-col lg:flex-row gap-4 sm:gap-8 pb-8 bg-slate-900 p-4 sm:p-8 ${index % 2 === 0 ? '' : 'lg:flex-row-reverse'}`}>
-                <img src={item.image} className='w-full lg:w-[50%] h-auto' alt={item.title} />
-                <div className='flex flex-col justify-center'>
-                  <div className='text-2xl sm:text-3xl mb-6 sm:mb-10'>{item.title}</div>
-                  <div className='text-base sm:text-lg'>{item.description}</div>
+          {/* Project Screenshots */}
+          <div className="space-y-12">
+            {projectItems.map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className={`flex flex-col gap-8 ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} bg-gray-700/50 p-6 rounded-xl backdrop-blur-sm`}
+              >
+                <motion.div 
+                  whileHover={{ scale: 1.02 }}
+                  className="w-full lg:w-1/2 overflow-hidden rounded-lg shadow-xl"
+                >
+                  <img 
+                    src={item.image} 
+                    alt={item.title} 
+                    className="w-full h-auto object-cover"
+                  />
+                </motion.div>
+                <div className="w-full lg:w-1/2 flex flex-col justify-center">
+                  <h3 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: rgbColor }}>
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-300">{item.description}</p>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className='bg-slate-800 text-white py-8 sm:py-16 px-4 sm:px-8 anton'>
-        <h2 className='text-3xl sm:text-4xl mb-4 sm:mb-8 text-center'>Contact Me</h2>
-        <p className='text-center text-base sm:text-xl mb-4 sm:mb-8 max-w-[400px] mx-auto'> If you have any questions or would like to work together, feel free to reach out!</p>
-        <div className='flex justify-center' onClick={redirectToHome}>
-          <div style={{ backgroundColor: rgbColor }} className="text-white py-2 sm:py-3 px-4 sm:px-6 rounded-full hover:bg-opacity-75 transition-all duration-300 cursor-pointer">Email Me</div>
+      {/* Contact CTA */}
+      <section className="py-16 bg-gray-900">
+        <div className="container mx-auto px-6 text-center">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-3xl sm:text-4xl font-bold mb-6"
+          >
+            Like what you see?
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ once: true }}
+            className="text-xl mb-8 max-w-2xl mx-auto"
+          >
+            Have a project in mind or want to discuss potential opportunities?
+          </motion.p>
+          <motion.button
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ duration: 0.3 }}
+            viewport={{ once: true }}
+            onClick={() => navigate('/#contact')}
+            className="px-8 py-3 bg-gradient-to-r from-green-500 to-blue-600 rounded-lg font-medium hover:shadow-lg hover:shadow-green-500/30 transition-all"
+          >
+            Get in Touch
+          </motion.button>
         </div>
-      </div>
+      </section>
     </div>
   );
-}
+};
 
 export default PortfolioWebsite;

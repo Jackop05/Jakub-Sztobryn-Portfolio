@@ -1,95 +1,145 @@
-import React, { useState, useEffect, useRef } from 'react';
-import emailjs from 'emailjs-com';
-import gsapContact from '../GSAPanimation/gsapContact';
+import React, { useState } from 'react';
+import { motion } from "framer-motion";
+import emailjs from '@emailjs/browser';
 
+const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+  const [status, setStatus] = useState(null);
 
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
 
-const ContactMe = () => {
-    const ref = useRef();
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
-
-
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus('sending');
     
-    const handleSubmit = (e) => {
-        e.preventDefault();
+    try {
+      await emailjs.send(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        formData,
+        import.meta.env.VITE_PUBLIC_KEY
+      );
+      
+      setStatus('success');
+      setFormData({ name: '', email: '', message: '' });
+    } catch (error) {
+      console.error('Error:', error);
+      setStatus('error');
+    }
+  };
 
-        emailjs.send(
-            import.meta.env.VITE_SERVICE_ID,
-            import.meta.env.VITE_TEMPLATE_ID,
-            {
-                from_name: name,
-                from_email: email,
-                message: message,
-            },
-            import.meta.env.VITE_PUBLIC_KEY
-        ).then((result) => {
-            console.log('Email successfully sent!', result.text);
-        }).catch((error) => {
-            console.error('Error sending email:', error);
-        });
+  return (
+    <section id="contact" className="py-20 bg-gray-800 text-white">
+      <div className="container mx-auto px-6 lg:px-12">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="max-w-2xl mx-auto text-center mb-16"
+        >
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500">
+              Contact Me
+            </span>
+          </h2>
+          <p className="text-xl text-gray-300">
+            Have a project in mind or want to discuss potential opportunities? Feel free to reach out!
+          </p>
+        </motion.div>
 
-        setName('');
-        setEmail('');
-        setMessage('');
-    };
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="max-w-lg mx-auto bg-gray-700/50 backdrop-blur-sm rounded-xl shadow-xl overflow-hidden border border-gray-600"
+        >
+          <form onSubmit={handleSubmit} className="p-8">
+            {status === 'success' && (
+              <div className="mb-6 p-4 bg-green-500/10 border border-green-500 rounded-lg text-green-400">
+                Message sent successfully! I'll get back to you soon.
+              </div>
+            )}
+            
+            {status === 'error' && (
+              <div className="mb-6 p-4 bg-red-500/10 border border-red-500 rounded-lg text-red-400">
+                Failed to send message. Please try again later.
+              </div>
+            )}
 
-    useEffect(() => {
-        gsapContact(ref);
-    }, []);
-
-
-
-    return (
-        <div id="contact"  className="p-6 mt-16 sm:p-10 lg:p-[100px] min-h-[600px] flex flex-col justify-center bg-darker text-light">
-            <div ref={ref} className="bg-dark blur-[8px] w-full max-w-[400px] anton mx-auto px-4 sm:px-6 py-8 border-0 rounded-2xl shadow-md">
-                <div id="contact" className="text-[30px] sm:text-[40px] font-bold mb-6 sm:mb-10 text-center">Contact Me</div>
-                <form onSubmit={handleSubmit}>
-                    <div className="mb-6 sm:mb-8">
-                        <label className="ml-2 sm:ml-4 block text-sm font-medium text-gray-300" htmlFor="name">Name</label>
-                        <input
-                            type="text"
-                            id="name"
-                            value={name}
-                            onChange={(e) => setName(e.target.value)}
-                            required
-                            className="mt-1 text-sm font-sans block w-full p-2 border-darker border-b-neon-blue border-[2px] bg-darker rounded-full outline-none px-3 sm:px-4"
-                        />
-                    </div>
-                    <div className="mb-6 sm:mb-8">
-                        <label className="ml-2 sm:ml-4 block text-sm font-medium text-gray-300" htmlFor="email">Email</label>
-                        <input
-                            type="email"
-                            id="email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            required
-                            className="mt-1 text-sm font-sans block w-full p-2 border-darker border-b-neon-blue border-[2px] bg-darker rounded-full outline-none px-3 sm:px-4"
-                        />
-                    </div>
-                    <div className="mb-6">
-                        <label className="ml-2 sm:ml-4 block text-sm font-medium text-gray-300" htmlFor="message">Message</label>
-                        <textarea
-                            id="message"
-                            value={message}
-                            onChange={(e) => setMessage(e.target.value)}
-                            required
-                            className="mt-1 text-sm font-sans block w-full p-3 sm:p-4 border-darker border-b-neon-blue border-[2px] bg-darker rounded-2xl rounded-r-none rounded-t-2xl outline-none"
-                            rows="4"
-                        />
-                    </div>
-
-                    <button
-                        type="submit"
-                        className="w-full p-2 sm:p-3 text-white text-lg sm:text-xl rounded-md drop-shadow-lg bg-neon-green"
-                    >
-                        Send Message
-                    </button>
-                </form>
+            <div className="mb-6">
+              <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+                Your Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"
+                placeholder="John Doe"
+              />
             </div>
-        </div>
-    );
+            
+            <div className="mb-6">
+              <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+                Email Address
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"
+                placeholder="john@example.com"
+              />
+            </div>
+            
+            <div className="mb-8">
+              <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+                Your Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white min-h-[150px]"
+                placeholder="Tell me about your project..."
+              />
+            </div>
+            
+            <button
+              type="submit"
+              disabled={status === 'sending'}
+              className={`w-full py-4 px-6 rounded-lg font-medium transition-colors ${
+                status === 'sending' 
+                  ? 'bg-gray-600 cursor-not-allowed' 
+                  : 'bg-gradient-to-r from-green-500 to-blue-600 hover:shadow-lg hover:shadow-green-500/30'
+              }`}
+            >
+              {status === 'sending' ? 'Sending...' : 'Send Message'}
+            </button>
+          </form>
+        </motion.div>
+      </div>
+    </section>
+  );
 };
 
-export default ContactMe;
+export default Contact;
