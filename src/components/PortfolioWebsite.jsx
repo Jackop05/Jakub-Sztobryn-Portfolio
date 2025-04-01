@@ -129,8 +129,8 @@ const PortfolioWebsite = () => {
                 viewport={{ once: true }}
                 className="mt-10"
               >
-                <a 
-                  href={link} 
+                <Link 
+                  to={link} 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-block px-8 py-3 rounded-lg font-medium transition-all"
@@ -141,7 +141,7 @@ const PortfolioWebsite = () => {
                   }}
                 >
                   View Live Project
-                </a>
+                </Link>
               </motion.div>
             </div>
           </motion.div>
