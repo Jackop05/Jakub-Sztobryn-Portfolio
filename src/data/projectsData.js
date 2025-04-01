@@ -1,12 +1,12 @@
 const projectData = {
     'javascript': [
         {
-            iconIndex: 0,
-            name: 'Korepetycje Online',
-            technologies: ['React.js', 'Node.js', 'MongoDB', 'Tailwind', 'Express'],
-            description: 'Website where you can learn math and physics with amazing teachers!',
-            image: '/images/korepetycjeOnline-app-preview.png',
-            link: '/project/javascript/korepetycje-online',
+            iconIndex: 8,
+            name: 'Onkore ~ Prototype',
+            technologies: ['JavaScript', 'React', 'Tailwind CSS', 'Java', 'Spring Boot', 'MongoDB'],
+            description: 'A responsive and modern application available to everyone on web, currently in the testing phase.',
+            image: '/images/onkore-preview.png',
+            link: 'https://www.onkore-api.xyz'
         },
         {
             iconIndex: 3,
@@ -23,6 +23,14 @@ const projectData = {
             description: 'Messenger is one of the most popular chat apps in the world, and I have coded it myself',
             image: '/images/messenger-app-preview.png',
             link: '/project/javascript/messenger-clone',
+        },
+        {
+            iconIndex: 0,
+            name: 'Korepetycje Online',
+            technologies: ['React.js', 'Node.js', 'MongoDB', 'Tailwind', 'Express'],
+            description: 'Website where you can learn math and physics with amazing teachers!',
+            image: '/images/korepetycjeOnline-app-preview.png',
+            link: '/project/javascript/korepetycje-online',
         },
         {
             iconIndex: 4,
@@ -124,7 +132,18 @@ const projectData = {
             image: '/images/gaussMatrixSolver-app-preview.png',
             link: '/project/c/gauss-matrix-solver',
         }
-    ]
+    ],
+    "python": [
+        {
+            iconIndex: 0,
+            name: 'Air Quality Analysis',
+            technologies: ['Python', 'Pandas', 'Matplotlib', 'Machine Learning', 'Data Visualization'],
+            description: 'An analytical tool for evaluating air quality using real-world datasets, leveraging Python libraries for data processing, visualization, and predictive modeling.',
+            image: '/images/airQualityAnalysis-app-preview.png',
+            link: 'https://github.com/Jackop05/AirQualityAnalysis/blob/master/PRiAD%20-%20projekt%20-%20Klasyfikacja%20jako%C5%9Bci%20powietrza%20wzgl%C4%99dem%20metryk%20zanieczyszczenia.ipynb'
+        }
+        
+    ],
 };
 
 export default projectData;

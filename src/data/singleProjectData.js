@@ -46,44 +46,6 @@ const singleProjectData = {
             link: 'https://github.com/Jackop05/Allegro-clone',
         },
         {
-            param: 'korepetycje-online',
-            name: 'Korepetycje Online',
-            upperTitle: 'Learn Math and Physics Online with Expert Tutors',
-            text1: [
-                'Korepetycje Online is a comprehensive educational platform for students seeking improvement in math and physics.',
-                'Whether preparing for exams, tackling homework, or enhancing grades, the platform connects students with experienced tutors for success.'
-            ],
-            text2: [
-                'Developed with modern web technologies like React, Node.js, and Tailwind CSS, Korepetycje Online offers a smooth and engaging learning experience.', 
-                'Students can book lessons, manage schedules, and interact with tutors in real time through a user-friendly interface.'
-            ],
-            project: [
-                {
-                    image: '/images/korepetycje/main.png',
-                    title: 'Main Dashboard',
-                    description: 'The main dashboard provides students with easy access to courses, schedules, and contact info, featuring a clean and intuitive layout for quick lesson booking.'
-                },
-                {
-                    image: '/images/korepetycje/lesson.png',
-                    title: 'Lesson Booking Page',
-                    description: 'Browse subjects, view tutor availability, and book lessons at convenient times. It takes only few clicks for user and the data is send to the database.',
-                },
-                {
-                    image: '/images/korepetycje/myLessons.png',
-                    title: 'My Lessons Page',
-                    description: 'Manage upcoming and past lessons with details on timing, subjects, each course has all the information user needs and provide a link to the meeting. '
-                },
-                {
-                    image: '/images/korepetycje/register.png',
-                    title: 'Registration Page',
-                    description: 'Designed for simplicity and security, allowing new users to create accounts and book lessons quickly. Icons and text are designed to make navigating through website hassle-free experience.'
-                }
-            ],
-            color: 'green-500',
-            rgbColor: 'rgb(34, 197, 94)', 
-            link: 'https://github.com/Jackop05/Korepetycje-Online'
-        },
-        {
             param: 'messenger-clone',
             name: 'Messenger Clone',
             upperTitle: 'Chat with Your Friends Seamlessly',
@@ -161,6 +123,44 @@ const singleProjectData = {
             color: 'purple-500',
             rgbColor: 'rgb(139, 92, 246)', 
             link: 'https://github.com/Jackop05/Maze-game'
+        },
+        {
+            param: 'korepetycje-online',
+            name: 'Korepetycje Online',
+            upperTitle: 'Learn Math and Physics Online with Expert Tutors',
+            text1: [
+                'Korepetycje Online is a comprehensive educational platform for students seeking improvement in math and physics.',
+                'Whether preparing for exams, tackling homework, or enhancing grades, the platform connects students with experienced tutors for success.'
+            ],
+            text2: [
+                'Developed with modern web technologies like React, Node.js, and Tailwind CSS, Korepetycje Online offers a smooth and engaging learning experience.', 
+                'Students can book lessons, manage schedules, and interact with tutors in real time through a user-friendly interface.'
+            ],
+            project: [
+                {
+                    image: '/images/korepetycje/main.png',
+                    title: 'Main Dashboard',
+                    description: 'The main dashboard provides students with easy access to courses, schedules, and contact info, featuring a clean and intuitive layout for quick lesson booking.'
+                },
+                {
+                    image: '/images/korepetycje/lesson.png',
+                    title: 'Lesson Booking Page',
+                    description: 'Browse subjects, view tutor availability, and book lessons at convenient times. It takes only few clicks for user and the data is send to the database.',
+                },
+                {
+                    image: '/images/korepetycje/myLessons.png',
+                    title: 'My Lessons Page',
+                    description: 'Manage upcoming and past lessons with details on timing, subjects, each course has all the information user needs and provide a link to the meeting. '
+                },
+                {
+                    image: '/images/korepetycje/register.png',
+                    title: 'Registration Page',
+                    description: 'Designed for simplicity and security, allowing new users to create accounts and book lessons quickly. Icons and text are designed to make navigating through website hassle-free experience.'
+                }
+            ],
+            color: 'green-500',
+            rgbColor: 'rgb(34, 197, 94)', 
+            link: 'https://github.com/Jackop05/Korepetycje-Online'
         },
         {
             param: 'recipe-app',

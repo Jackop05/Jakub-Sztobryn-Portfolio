@@ -25,12 +25,18 @@ const Projects = () => {
       color: "#555555", 
       icon: "C.png",
       gradient: "from-gray-600 to-gray-800" 
+    },
+    { 
+      name: "Python", 
+      color: "#58cf39", 
+      icon: "Python.png",
+      gradient: "from-green-600 to-green-800" 
     }
   ];
 
   const currentTech = technologies[techIndex].name.toLowerCase();
 
-  
+
   return (
     <section id="projects" className="py-20 bg-gray-900 text-white">
       <div className="container mx-auto px-6 lg:px-12">
