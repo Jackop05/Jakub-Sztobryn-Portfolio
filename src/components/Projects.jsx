@@ -154,14 +154,14 @@ const Projects = () => {
                   </motion.div>
                 )}
                 {project.link && (
-                  <a 
-                    href={`${project.link}`} 
+                  <Link 
+                    to={`${project.link}`} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="inline-block mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-500 rounded-lg text-sm font-medium transition-colors"
                   >
                     View Project
-                  </a>
+                  </Link>
                 )}
               </motion.div>
             </VerticalTimelineElement>
