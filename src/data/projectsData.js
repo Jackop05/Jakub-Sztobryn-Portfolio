@@ -20,7 +20,7 @@ const projectData = {
             iconIndex: 2,
             name: 'Messenger clone',
             technologies: ['Vite.js', 'Node.js', 'MongoDB', 'Tailwind', 'Express'],
-            description: 'Messenger is one of the most popular chat apps in the world, and I have coded it myself',
+            description: 'Messenger is one of the most popular chat apps in the world, and I have coded copy of it myself',
             image: '/images/messenger-app-preview.png',
             link: '/project/javascript/messenger-clone',
         },
@@ -89,15 +89,7 @@ const projectData = {
             description: "Weather App fetches real-time weather data from an external API and displays it.",
             image: "/images/weatherJava-app-preview.png",
             link: "/project/java/java-weather-app"
-        },     
-        {
-            iconIndex: 2,
-            name: "New project",
-            technologies: ["Java", "Spring", "Swing", "PostgreSQL", "Maven"],
-            description: "New project 'Bank App' is being developed right now...",
-            image: "/images/bank-app-preview.png",
-            link: "/"
-        },    
+        },        
         {
             iconIndex: 3,
             name: "Java Event App",

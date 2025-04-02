@@ -120,7 +120,7 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white min-h-[150px]"
-                placeholder="Tell me about your project..."
+                placeholder="Message..."
               />
             </div>
             
