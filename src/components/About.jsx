@@ -13,7 +13,7 @@ const About = () => {
     },
     {
       question: "Best programming language?",
-      answer: "With over 2 years of college experience, I've developed strong skills in JavaScript across the full stack. Through many hours of learning and personal projects, I've built everything from interactive UIs to backend API systems."
+      answer: "With over 2 years of college experience, I've developed strong skills in JavaScript and Java across the full stack. Through many hours of learning and personal projects, I've built everything from interactive UIs to backend API systems."
     }
   ];
 
