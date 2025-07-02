@@ -5,7 +5,7 @@ const About = () => {
   const qaPairs = [
     {
       question: "Who?",
-      answer: "I'm a 19-year-old student at Warsaw University of Technology with a passion for creating impactful software solutions. My goal is to join a dynamic development team where I can contribute my skills and continue growing."
+      answer: "I'm a 20-year-old student at Warsaw University of Technology with a passion for creating impactful software solutions. My goal is to join a dynamic development team where I can contribute my skills and continue growing."
     },
     {
       question: "What about college?",
@@ -13,7 +13,7 @@ const About = () => {
     },
     {
       question: "Best programming language?",
-      answer: "With 2 years of experience, I've developed strong skills in JavaScript across the full stack. Through countless hours of learning and personal projects, I've built everything from interactive UIs to robust backend systems."
+      answer: "With over 2 years of college experience, I've developed strong skills in JavaScript across the full stack. Through many hours of learning and personal projects, I've built everything from interactive UIs to backend API systems."
     }
   ];
 
